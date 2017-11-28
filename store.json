@@ -6,7 +6,7 @@
     "name": "inception",
     "fprocess": "python3 index.py",
     "network": "func_functions",
-    "repo_url": ""
+    "repo_url": "https://github.com/faas-and-furious/inception-function"
   },
   {
     "title": "mememachine",
