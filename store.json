@@ -51,5 +51,13 @@
     "image": "johnmccabe/qrcode",
     "name": "qrcode-go",
     "network": "func_functions"
+  },
+  {
+    "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
+    "title": "YouTube Video Downloader",
+    "description": "Download YouTube videos as a function",
+    "image": "alexellis2/faas-youtubedl",
+    "name": "youtube-dl",
+    "network": "func_functions"
   }
 ]
