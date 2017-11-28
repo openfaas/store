@@ -43,5 +43,21 @@
     "image": "functions/hubstats",
     "name": "hubstats",
     "network": "func_functions"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
+    "title": "QR Code Generator - Go",
+    "description": "QR Code generator using Go",
+    "image": "functions/qrcode-go",
+    "name": "qrcode-go",
+    "network": "func_functions"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode-csharp/master/images/qrcode.png",
+    "title": "QR Code Generator - C#",
+    "description": "QR Code generator using .NET Core",
+    "image": "functions/qrcode-csharp",
+    "name": "qrcode-csharp",
+    "network": "func_functions"
   }
 ]
