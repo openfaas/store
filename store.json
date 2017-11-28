@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Inception",
+    "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
+    "image": "alexellis/inception",
+    "name": "inception",
+    "fprocess": "python3 index.py",
+    "network": "func_functions"
+  },
+  {
+    "title": "mememachine",
+    "description": "Turn any image into a meme.",
+    "image": "developius/faas-mememachine:0.2",
+    "name": "mememachine",
+    "network": "func_functions"
+  },
+  {
+    "title": "Figlet",
+    "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
+    "image": "jmkhael/faas-figlet",
+    "name": "figlet",
+    "network": "func_functions"
+  },
+  {
+    "title": "Left-Pad",
+    "description": "left-pad on OpenFaaS",
+    "image": "alexellis2/faas-leftpad",
+    "name": "leftpad",
+    "network": "func_functions"
+  },
+  {
+    "icon": "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png",
+    "title": "Github Stats",
+    "description": "A function to collect github stats for an Organization",
+    "image": "kenfdev/github-stats",
+    "name": "github-stats",
+    "network": "func_functions"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
+    "title": "Dockerhub Stats",
+    "description": "Golang function gives the count of repos a user has on the Docker hub",
+    "image": "functions/hubstats",
+    "name": "hubstats",
+    "network": "func_functions"
+  }
+]
