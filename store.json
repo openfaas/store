@@ -76,5 +76,14 @@
     "name": "text-to-speech",
     "network": "func_functions",
     "repo_url": "https://github.com/rorpage/openfaas-text-to-speech"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
+    "title": "SSL/TLS cert info",
+    "description": "Returns SSL/TLS certificate information for a given URL",
+    "image": "stefanprodan/certinfo",
+    "name": "certinfo",
+    "network": "func_functions",
+    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
   }
 ]
