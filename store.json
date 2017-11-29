@@ -67,5 +67,14 @@
     "name": "youtube-dl",
     "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/youtube-dl"
+  },
+  {
+    "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
+    "title": "OpenFaaS Text-to-Speech",
+    "description": "Generate an MP3 of text using Google's Text-to-Speech",
+    "image": "rorpage/text-to-speech",
+    "name": "text-to-speech",
+    "network": "func_functions",
+    "repo_url": "https://github.com/rorpage/openfaas-text-to-speech"
   }
 ]
