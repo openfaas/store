@@ -33,15 +33,6 @@
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
   },
   {
-    "icon": "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png",
-    "title": "Github Stats",
-    "description": "A function to collect github stats for an Organization",
-    "image": "kenfdev/github-stats",
-    "name": "github-stats",
-    "network": "func_functions",
-    "repo_url": "https://github.com/kenfdev/openfaas-github-stats"
-  },
-  {
     "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
     "title": "Dockerhub Stats",
     "description": "Golang function gives the count of repos a user has on the Docker hub",
