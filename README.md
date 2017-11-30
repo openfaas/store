@@ -2,6 +2,10 @@
 
 The Function Store is a curated index of OpenFaaS functions which have been tested by the community and chosen for their experience.
 
+See the [announcement here](https://twitter.com/alexellisuk/status/936160369516654592)
+
+![](https://pbs.twimg.com/media/DP3od15X4AEXoDI.jpg)
+
 ## Q&A
 
 * How much does this cost?
