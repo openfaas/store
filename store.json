@@ -25,6 +25,15 @@
     "repo_url": "https://github.com/jmkhael/faas-figlet"
   },
   {
+    "title": "NodeInfo",
+    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+    "image": "functions/nodeinfo:latest",
+    "name": "nodeinfo",
+    "fprocess": "node main.js",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas"
+  },
+  {
     "title": "Left-Pad",
     "description": "left-pad on OpenFaaS",
     "image": "alexellis2/faas-leftpad",
