@@ -32,7 +32,7 @@ See also: Google Playstore / Apple AppStore.
 
 ## Make a submission
 
-If you'd like to make a submission then raise an issue to propose it.
+If you'd like to make a submission then raise an issue to propose it. This should follow the [CONTRIBUTION guide](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) for OpenFaaS.
 
 Here's an example of a function definition for the registry:
 
