@@ -44,6 +44,22 @@ Here's an example of a function definition for the registry:
     "name": "inception",
     "fprocess": "python3 index.py",
     "network": "func_functions",
-    "repo_url": "https://github.com/faas-and-furious/inception-function"
+    "repo_url": "https://github.com/faas-and-furious/inception-function",
+    "labels": {
+      "com.openfaas.ui.ext": ".json"
+    },
+    "environment": {
+      "write_timeout": "30"
+    }
   }
 ```
+
+### See also:
+
+* `labels`
+
+You can set the file-extension used by the UI to download a result from your function i.e. .csv/.mp3/.txt
+
+* `environment`
+
+Set timeouts etc
