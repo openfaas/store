@@ -46,7 +46,7 @@ Here's an example of a function definition for the registry:
     "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
     "labels": {
-      "com.openfaas.ui.ext": ".json"
+      "com.openfaas.ui.ext": "json"
     },
     "environment": {
       "write_timeout": "30"
@@ -58,7 +58,7 @@ Here's an example of a function definition for the registry:
 
 * `labels`
 
-You can set the file-extension used by the UI to download a result from your function i.e. .csv/.mp3/.txt
+You can set the file-extension used by the UI to download a result from your function i.e. csv/mp3/txt
 
 * `environment`
 
