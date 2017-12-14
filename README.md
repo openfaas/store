@@ -28,7 +28,7 @@ We are using a .json file in this repository and GitHub's raw download CDN.
 
 * Why is it called a store if I don't have to pay money?
 
-See also: Google Playstore / Apple AppStore.
+See also: Google Play Store/Apple App Store.
 
 ## Make a submission
 
@@ -58,7 +58,7 @@ Here's an example of a function definition for the registry:
 
 * `labels`
 
-You can set the file-extension used by the UI to download a result from your function i.e. csv/mp3/txt
+You can set the file extension used by the UI to download a result from your function i.e. csv/mp3/txt
 
 * `environment`
 
