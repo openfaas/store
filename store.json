@@ -109,5 +109,13 @@
     "name": "certinfo",
     "network": "func_functions",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+  },
+  {
+    "title": "nslookup",
+    "description": "Uses nslookup to return any IP address info on domains and URLs",
+    "image": "jockdarock/nslookupfaas:master",
+    "name": "nslookup",
+    "network": "func_functions",
+    "repo_url": "https://github.com/jockdarock/nslookup_faas"
   }
 ]
