@@ -7,3 +7,4 @@ curators:
 
 features:
   - comments
+  - dco_check
