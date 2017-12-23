@@ -7,7 +7,7 @@
     "fprocess": "python3 index.py",
     "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
-    "environment": { 
+    "environment": {
       "read_timeout": "60",
       "write_timeout": "60"
     }
@@ -80,7 +80,7 @@
     "labels": {
       "com.openfaas.ui.ext": "mp4"
     },
-    "environment": { 
+    "environment": {
       "read_timeout": "300",
       "write_timeout": "300"
     }
@@ -96,7 +96,7 @@
     "labels": {
       "com.openfaas.ui.ext": "mp3"
     },
-    "environment": { 
+    "environment": {
       "read_timeout": "60",
       "write_timeout": "60"
     }
@@ -109,5 +109,19 @@
     "name": "certinfo",
     "network": "func_functions",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+  },
+  {
+    "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
+    "title": "Colourise",
+    "description": "Colourise a black and white image using machine learning",
+    "image": "developius/openfaas-colourise-url",
+    "name": "colourise",
+    "fprocess": "python -u index.py",
+    "network": "func_functions",
+    "repo_url": "https://github.com/developius/openfaas-colourise-from-url",
+    "environment": {
+      "read_timeout": "60",
+      "write_timeout": "60"
+    }
   }
 ]
