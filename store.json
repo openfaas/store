@@ -117,5 +117,14 @@
     "name": "nslookup",
     "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-promq/master/logo.png",
+    "title": "Prometheus query runner",
+    "description": "Runs PromQL for a given Prometheus server.",
+    "image": "stefanprodan/openfaas-promq",
+    "name": "promq",
+    "network": "func_functions",
+    "repo_url": "https://github.com/stefanprodan/openfaas-promq"
   }
 ]
