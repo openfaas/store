@@ -117,5 +117,14 @@
     "name": "nslookup",
     "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
+  },
+  {
+    "title": "fping",
+    "description": "Function to check health status of target websites/servers/etc. Inspired by Pingdom uptime checks",
+    "image": "rakshazi/fping",
+    "name": "fping",
+    "fprocess": "php index.php",
+    "network": "func_functions",
+    "repo_url": "https://github.com/rakshazi/fping"
   }
 ]
