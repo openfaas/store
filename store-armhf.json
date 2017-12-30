@@ -1,0 +1,11 @@
+[
+  {
+    "title": "NodeInfo",
+    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+    "image": "functions/nodeinfo:latest-armhf",
+    "name": "nodeinfo",
+    "fprocess": "node main.js",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas"
+  }
+]
