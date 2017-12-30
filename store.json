@@ -70,6 +70,18 @@
     }
   },
   {
+    "title": "Nmap Security Scanner",
+    "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
+    "image": "functions/nmap:0.1",
+    "name": "nmap",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
+    "environment": { 
+      "read_timeout": "300",
+      "write_timeout": "300"
+    }
+  },
+  {
     "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
     "title": "YouTube Video Downloader",
     "description": "Download YouTube videos as a function",
