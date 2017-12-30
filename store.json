@@ -70,6 +70,7 @@
     }
   },
   {
+    "icon": "https://nmap.org/images/nmap-logo-256x256.png",
     "title": "Nmap Security Scanner",
     "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
     "image": "functions/nmap:0.1",
