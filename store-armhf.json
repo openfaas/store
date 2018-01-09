@@ -8,4 +8,12 @@
     "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
   }
+  {
+    "title": "nslookup",
+    "description": "Uses nslookup to return any IP address info on domains and URLs",
+    "image": "jockdarock/nslookup-arm-faas:latest-armhf",
+    "name": "nslookup",
+    "network": "func_functions",
+    "repo_url": "https://github.com/jockdarock/nslookup-arm-faas"
+  }
 ]
