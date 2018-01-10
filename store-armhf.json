@@ -16,5 +16,5 @@
     "fprocess": "figlet",
     "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
-  },
+  }
 ]
