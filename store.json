@@ -1,5 +1,22 @@
 [
   {
+    "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
+    "title": "Colorization",
+    "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
+    "image": "alexellis2/openfaas-colorization:0.4.0",
+    "name": "colorise",
+    "fprocess": "python -u index.py",
+    "network": "func_functions",
+    "repo_url": "https://github.com/alexellis/repaint-the-past",
+    "labels": {
+      "com.openfaas.ui.ext": "png"
+    },
+    "environment": {
+      "read_timeout": "60",
+      "write_timeout": "60"
+    }
+  },
+  {
     "title": "Inception",
     "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
     "image": "alexellis/inception",
@@ -10,17 +27,6 @@
     "environment": { 
       "read_timeout": "60",
       "write_timeout": "60"
-    }
-  },
-  {
-    "title": "mememachine",
-    "description": "Turn any image into a meme.",
-    "image": "developius/faas-mememachine:0.2",
-    "name": "mememachine",
-    "network": "func_functions",
-    "repo_url": "https://github.com/developius/openfaas-mememachine",
-    "labels": {
-      "com.openfaas.ui.ext": "jpg"
     }
   },
   {
@@ -130,5 +136,16 @@
     "name": "nslookup",
     "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
+  },  
+  {
+    "title": "mememachine",
+    "description": "Turn any image into a meme.",
+    "image": "developius/faas-mememachine:0.2",
+    "name": "mememachine",
+    "network": "func_functions",
+    "repo_url": "https://github.com/developius/openfaas-mememachine",
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
   }
 ]
