@@ -148,5 +148,14 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "title": "openfaas-ocr",
+    "description": "Return character in an image indentified by OCR engine tesseract",
+    "image": "viveksyngh/openfaas-ocr:latest",
+    "name": "ocr",
+    "network": "func_functions",
+    "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
   }
+
 ]
