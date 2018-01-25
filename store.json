@@ -48,14 +48,6 @@
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
   },
   {
-    "title": "Left-Pad",
-    "description": "left-pad on OpenFaaS",
-    "image": "alexellis2/faas-leftpad",
-    "name": "leftpad",
-    "network": "func_functions",
-    "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
-  },
-  {
     "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
     "title": "Dockerhub Stats",
     "description": "Golang function gives the count of repos a user has on the Docker hub",
@@ -63,6 +55,14 @@
     "name": "hubstats",
     "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas"
+  },
+  {
+    "title": "Tesseract OCR",
+    "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL of an image in .jpg or .png format.",
+    "image": "viveksyngh/openfaas-ocr:latest",
+    "name": "ocr",
+    "network": "func_functions",
+    "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
   },
   {
     "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
@@ -149,13 +149,12 @@
       "com.openfaas.ui.ext": "jpg"
     }
   },
-  {
-    "title": "openfaas-ocr",
-    "description": "Return character in an image indentified by OCR engine tesseract",
-    "image": "viveksyngh/openfaas-ocr:latest",
-    "name": "ocr",
+   {
+    "title": "Left-Pad",
+    "description": "left-pad on OpenFaaS",
+    "image": "alexellis2/faas-leftpad",
+    "name": "leftpad",
     "network": "func_functions",
-    "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
+    "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
   }
-
 ]
