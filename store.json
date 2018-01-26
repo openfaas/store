@@ -156,5 +156,21 @@
     "name": "leftpad",
     "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
+  },
+  {
+    "title": "Get latest release for a Github repository",
+    "description": "A function to get the latest release on Github and download the asset for an arch. A sample function to demonstrate the use of PHP with OpenFaaS",
+    "image": "itscaro/github-release:latest",
+    "name": "github-release-php",
+    "network": "func_functions",
+    "repo_url": "https://github.com/itscaro/openfaas-php-github-release",
+    "labels": {
+      "com.openfaas.function.language": "php",
+      "com.openfaas.sample": "true"
+    },
+    "environment": {
+      "read_timeout": "60",
+      "write_timeout": "60"
+    }
   }
 ]
