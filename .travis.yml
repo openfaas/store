@@ -1,0 +1,19 @@
+sudo: required
+
+language: go
+
+go:
+  - 1.9.x
+install:
+
+services:
+
+before_script:
+
+script:
+  - make build
+
+before_deploy:
+  - make build
+
+deploy:
