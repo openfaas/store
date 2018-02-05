@@ -1,0 +1,20 @@
+[
+  {
+    "title": "NodeInfo",
+    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+    "image": "functions/nodeinfo:arm64",
+    "name": "nodeinfo",
+    "fprocess": "node main.js",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+  },
+  {
+    "title": "sha512sum",
+    "description": "Generate shasums in 512 format",
+    "image": "functions/alpine:latest-arm64",
+    "name": "sha512sum",
+    "fprocess": "sha512sum",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
+  }
+]
