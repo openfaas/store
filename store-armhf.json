@@ -16,5 +16,14 @@
     "fprocess": "figlet",
     "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
+  },
+  {
+    "title": "SendTweet",
+    "description": "Send a tweet",
+    "image": "felipecruz/send-tweet",
+    "name": "send-tweet",
+    "fprocess": "python index.py",
+    "network": "func_functions",
+    "repo_url": "https://github.com/felipecruz91/Send-Tweet-OpenFaaS-Function.git"
   }
 ]
