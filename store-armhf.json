@@ -29,6 +29,7 @@
     "title": "Manifest Query",
     "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
     "image": "rgee0/of-mquery:1.0",
+    "fprocess": "./mquery", 
     "name": "mquery",
     "network": "func_functions",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
