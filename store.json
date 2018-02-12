@@ -158,8 +158,8 @@
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
   },
   {
-    "title": "Manifest Query",
-    "description": "Based on the simple utility and backend for querying Docker v2 API-supporting registry images and reporting on \"manifest list\" multi-platform image support by Phil Estes",
+    "title": "Docker Image Manifest Query",
+    "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
     "image": "rgee0/of-mquery:1.0",
     "name": "mquery",
     "network": "func_functions",
