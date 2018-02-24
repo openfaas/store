@@ -165,5 +165,14 @@
     "name": "mquery",
     "network": "func_functions",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
+  },
+  {
+  "title": "SentimentAnalysis",
+  "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+  "image": "functions/sentimentanalysis",
+  "envProcess": "python ./handler.py",
+  "name": "sentimentanalysis",
+  "network": "func_functions",
+  "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
   }
 ]
