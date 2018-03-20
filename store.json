@@ -6,7 +6,6 @@
     "image": "alexellis2/openfaas-colorization:0.4.0",
     "name": "colorise",
     "fprocess": "python -u index.py",
-    "network": "func_functions",
     "repo_url": "https://github.com/alexellis/repaint-the-past",
     "labels": {
       "com.openfaas.ui.ext": "png"
@@ -23,7 +22,6 @@
     "image": "alexellis/inception:2.1",
     "name": "inception",
     "fprocess": "python3 index.py",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
     "environment": { 
       "read_timeout": "60",
@@ -36,7 +34,6 @@
     "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
     "image": "functions/haveibeenpwned:0.1",
     "name": "haveibeenpwned",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
     "readOnlyRootFilesystem": true
   },
@@ -46,7 +43,6 @@
     "description": "Returns SSL/TLS certificate information for a given URL",
     "image": "stefanprodan/certinfo",
     "name": "certinfo",
-    "network": "func_functions",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo",
     "readOnlyRootFilesystem": true
   },
@@ -55,7 +51,6 @@
     "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
     "image": "esimov/pigo-openfaas:0.1",
     "name": "face-detect-pigo",
-    "network": "func_functions",
     "repo_url": "https://github.com/esimov/pigo-openfaas",
     "readOnlyRootFilesystem": true,
     "environment": {
@@ -72,7 +67,6 @@
     "image": "functions/sentimentanalysis",
     "envProcess": "python ./handler.py",
     "name": "sentimentanalysis",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
     },
   {
@@ -80,7 +74,6 @@
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
     "image": "functions/figlet:0.9.6",
     "name": "figlet",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/figlet",
     "readOnlyRootFilesystem": true
   },
@@ -89,7 +82,6 @@
     "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
     "image": "functions/business-strategy-generator:0.1",
     "name": "business-strategy-generator",
-    "network": "func_functions",
     "repo_url": "https://github.com/alexellis/strategy_generator",
     "readOnlyRootFilesystem": true
   },
@@ -99,7 +91,6 @@
     "image": "functions/nodeinfo:latest",
     "name": "nodeinfo",
     "fprocess": "node main.js",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo",
     "readOnlyRootFilesystem": true
   },
@@ -109,7 +100,6 @@
     "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
     "image": "viveksyngh/openfaas-ocr:0.2.0",
     "name": "ocr",
-    "network": "func_functions",
     "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
   },
   {
@@ -118,7 +108,6 @@
     "description": "Golang function gives the count of repos a user has on the Docker hub",
     "image": "functions/hubstats",
     "name": "hubstats",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas",
     "readOnlyRootFilesystem": true
   },
@@ -128,7 +117,6 @@
     "description": "QR Code generator using Go",
     "image": "johnmccabe/qrcode",
     "name": "qrcode-go",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/qrcode",
     "labels": {
       "com.openfaas.ui.ext": "png"
@@ -140,7 +128,6 @@
     "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
     "image": "functions/nmap:0.1",
     "name": "nmap",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
     "environment": { 
       "read_timeout": "300",
@@ -153,7 +140,6 @@
     "image": "alexellis2/ascii-cows-openfaas:0.1",
     "name": "cows",
     "fprocess": "node show_cow.js",
-    "network": "func_functions",
     "repo_url": "https://github.com/alexellis/cows-docker",
     "readOnlyRootFilesystem": true
   },
@@ -163,7 +149,6 @@
     "description": "Download YouTube videos as a function",
     "image": "alexellis2/faas-youtubedl",
     "name": "youtube-dl",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/youtube-dl",
     "labels": {
       "com.openfaas.ui.ext": "mp4"
@@ -179,7 +164,6 @@
     "description": "Generate an MP3 of text using Google's Text-to-Speech",
     "image": "rorpage/text-to-speech",
     "name": "text-to-speech",
-    "network": "func_functions",
     "repo_url": "https://github.com/rorpage/openfaas-text-to-speech",
     "labels": {
       "com.openfaas.ui.ext": "mp3"
@@ -194,7 +178,6 @@
     "description": "Uses nslookup to return any IP address info on domains and URLs",
     "image": "jockdarock/nslookupfaas:master",
     "name": "nslookup",
-    "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
   },  
   {
@@ -203,7 +186,6 @@
     "image": "rgee0/of-mquery:1.0",
     "fprocess": "./mquery", 
     "name": "mquery",
-    "network": "func_functions",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
   {
@@ -211,7 +193,6 @@
     "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
     "image": "alexellis2/facedetect:0.1",
     "name": "face-detect-opencv",
-    "network": "func_functions",
     "repo_url": "https://github.com/alexellis/facedetect-openfaas",
     "readOnlyRootFilesystem": true,
     "environment": {
@@ -227,7 +208,6 @@
     "description": "left-pad on OpenFaaS",
     "image": "functions/faas-leftpad:0.2",
     "name": "leftpad",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
     "readOnlyRootFilesystem": true
   },
@@ -236,7 +216,6 @@
     "description": "Turn any image into a meme.",
     "image": "developius/faas-mememachine:0.2",
     "name": "mememachine",
-    "network": "func_functions",
     "repo_url": "https://github.com/developius/openfaas-mememachine",
     "labels": {
       "com.openfaas.ui.ext": "jpg"

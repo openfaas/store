@@ -5,7 +5,6 @@
     "image": "functions/nodeinfo:latest-armhf",
     "name": "nodeinfo",
     "fprocess": "node main.js",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
   },
   {
@@ -14,7 +13,6 @@
     "image": "functions/figlet:latest-armhf",
     "name": "figlet",
     "fprocess": "figlet",
-    "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
   },
   {
@@ -22,7 +20,6 @@
     "description": "left-pad on OpenFaaS",
     "image": "rgee0/faas-leftpad",
     "name": "leftpad",
-    "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
   },
   {
@@ -31,7 +28,6 @@
     "image": "rgee0/of-mquery:1.0",
     "fprocess": "./mquery", 
     "name": "mquery",
-    "network": "func_functions",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
   {
@@ -39,7 +35,6 @@
     "description": "Uses nslookup to return any IP address info on domains and URLs",
     "image": "jockdarock/nslookup-arm-faas:latest-armhf",
     "name": "nslookup",
-    "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup-arm-faas"
   },
     {
