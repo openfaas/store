@@ -33,7 +33,7 @@
     "name": "mquery",
     "network": "func_functions",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
-  }
+  },
   {
     "title": "nslookup",
     "description": "Uses nslookup to return any IP address info on domains and URLs",
