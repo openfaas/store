@@ -41,5 +41,14 @@
     "name": "nslookup",
     "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup-arm-faas"
+  },
+    {
+    "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
+    "title": "SSL/TLS cert info",
+    "description": "Returns SSL/TLS certificate information for a given URL",
+    "image": "rgee0/certinfo:armhf",
+    "name": "certinfo",
+    "network": "func_functions",
+    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
   }
 ]
