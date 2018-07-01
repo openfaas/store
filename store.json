@@ -57,9 +57,10 @@
     "repo_url": "https://github.com/openfaas/faas"
   },
   {
+    "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
     "title": "Tesseract OCR",
-    "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL of an image in .jpg or .png format.",
-    "image": "viveksyngh/openfaas-ocr:latest",
+    "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
+    "image": "viveksyngh/openfaas-ocr:0.2.0",
     "name": "ocr",
     "network": "func_functions",
     "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
