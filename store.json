@@ -33,10 +33,10 @@
   {
     "title": "Figlet",
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
-    "image": "jmkhael/faas-figlet",
+    "image": "functions/figlet:0.1",
     "name": "figlet",
     "network": "func_functions",
-    "repo_url": "https://github.com/jmkhael/faas-figlet"
+    "repo_url": "https://github.com/faas-and-furious/figlet"
   },
   {
     "title": "NodeInfo",
@@ -152,7 +152,7 @@
    {
     "title": "Left-Pad",
     "description": "left-pad on OpenFaaS",
-    "image": "alexellis2/faas-leftpad",
+    "image": "functions/faas-leftpad:0.2",
     "name": "leftpad",
     "network": "func_functions",
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
