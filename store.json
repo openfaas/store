@@ -83,7 +83,7 @@
     "image": "alexellis2/ascii-cows-openfaas:0.1",
     "name": "cows",
     "fprocess": "node show_cow.js",
-    "network": "",
+    "network": "func_functions",
     "repo_url": "https://github.com/alexellis/cows-docker"
   },
   {
