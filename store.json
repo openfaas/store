@@ -78,6 +78,15 @@
     }
   },
   {
+    "title": "ASCII Cows",
+    "description": "Generate cartoons of ASCII cows",
+    "image": "alexellis2/ascii-cows-openfaas:0.1",
+    "name": "cows",
+    "fprocess": "node show_cow.js",
+    "network": "",
+    "repo_url": "https://github.com/alexellis/cows-docker"
+  },
+  {
     "icon": "https://nmap.org/images/nmap-logo-256x256.png",
     "title": "Nmap Security Scanner",
     "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
