@@ -36,7 +36,8 @@
     "image": "functions/figlet:0.1",
     "name": "figlet",
     "network": "func_functions",
-    "repo_url": "https://github.com/faas-and-furious/figlet"
+    "repo_url": "https://github.com/faas-and-furious/figlet",
+    "readOnlyRootFilesystem": true
   },
   {
     "title": "NodeInfo",
@@ -45,7 +46,8 @@
     "name": "nodeinfo",
     "fprocess": "node main.js",
     "network": "func_functions",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo",
+    "readOnlyRootFilesystem": true
   },
   {
     "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
@@ -54,7 +56,8 @@
     "image": "functions/hubstats",
     "name": "hubstats",
     "network": "func_functions",
-    "repo_url": "https://github.com/openfaas/faas"
+    "repo_url": "https://github.com/openfaas/faas",
+    "readOnlyRootFilesystem": true
   },
   {
     "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
@@ -84,7 +87,8 @@
     "name": "cows",
     "fprocess": "node show_cow.js",
     "network": "func_functions",
-    "repo_url": "https://github.com/alexellis/cows-docker"
+    "repo_url": "https://github.com/alexellis/cows-docker",
+    "readOnlyRootFilesystem": true
   },
   {
     "icon": "https://nmap.org/images/nmap-logo-256x256.png",
@@ -138,7 +142,8 @@
     "image": "stefanprodan/certinfo",
     "name": "certinfo",
     "network": "func_functions",
-    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo",
+    "readOnlyRootFilesystem": true
   },
   {
     "title": "nslookup",
@@ -165,7 +170,8 @@
     "image": "functions/faas-leftpad:0.2",
     "name": "leftpad",
     "network": "func_functions",
-    "repo_url": "https://github.com/faas-and-furious/faas-leftpad"
+    "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
+    "readOnlyRootFilesystem": true
   },
   {
     "title": "Docker Image Manifest Query",
