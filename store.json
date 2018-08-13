@@ -32,6 +32,7 @@
   },
   {
     "title": "Have I Been Pwned",
+    "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
     "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
     "image": "functions/haveibeenpwned:0.1",
     "name": "haveibeenpwned",
