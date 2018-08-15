@@ -50,6 +50,9 @@
     "readOnlyRootFilesystem": true,
     "environment": {
       "output_mode" : "image"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
     }
   },
   {
