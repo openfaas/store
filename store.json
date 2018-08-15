@@ -41,6 +41,18 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "title": "face-detect",
+    "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
+    "image": "alexellis2/facedetect:0.1",
+    "name": "face-detect",
+    "network": "func_functions",
+    "repo_url": "https://github.com/alexellis/facedetect-openfaas",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "output_mode" : "image"
+    }
+  },
+  {
     "title": "Figlet",
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
     "image": "functions/figlet:0.1",
