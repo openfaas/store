@@ -218,12 +218,12 @@
   "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
   },
   {
-    "title": "OpenFaaS Function for Face Detection",
+    "title": "Face Detection with Pigo",
     "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
-    "image": "esimov/openfaas-pigo:latest",
-    "name": "face-detect",
+    "image": "esimov/pigo-openfaas:0.1",
+    "name": "face-detect-pigo",
     "network": "func_functions",
-    "repo_url": "https://github.com/esimov/openfaas-pigo",
+    "repo_url": "https://github.com/esimov/pigo-openfaas",
     "readOnlyRootFilesystem": true,
     "environment": {
       "output_mode": "image",
