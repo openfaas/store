@@ -1,0 +1,9 @@
+sudo: false
+
+install:
+  - sudo apt-get install jq
+
+script:
+  - jq empty store.json
+  - jq empty store-arm64.json 
+  - jq empty store-armhf.json 
