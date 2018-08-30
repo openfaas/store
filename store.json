@@ -41,12 +41,22 @@
     "readOnlyRootFilesystem": true
   },
   {
-    "title": "face-detect",
-    "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
-    "image": "alexellis2/facedetect:0.1",
-    "name": "face-detect",
+    "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
+    "title": "SSL/TLS cert info",
+    "description": "Returns SSL/TLS certificate information for a given URL",
+    "image": "stefanprodan/certinfo",
+    "name": "certinfo",
     "network": "func_functions",
-    "repo_url": "https://github.com/alexellis/facedetect-openfaas",
+    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "Face Detection with Pigo",
+    "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
+    "image": "esimov/pigo-openfaas:0.1",
+    "name": "face-detect-pigo",
+    "network": "func_functions",
+    "repo_url": "https://github.com/esimov/pigo-openfaas",
     "readOnlyRootFilesystem": true,
     "environment": {
       "output_mode": "image",
@@ -56,6 +66,15 @@
       "com.openfaas.ui.ext": "jpg"
     }
   },
+  {
+    "title": "SentimentAnalysis",
+    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+    "image": "functions/sentimentanalysis",
+    "envProcess": "python ./handler.py",
+    "name": "sentimentanalysis",
+    "network": "func_functions",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
+    },
   {
     "title": "Figlet",
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
@@ -76,6 +95,15 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
+    "title": "Tesseract OCR",
+    "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
+    "image": "viveksyngh/openfaas-ocr:0.2.0",
+    "name": "ocr",
+    "network": "func_functions",
+    "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
+  },
+  {
     "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
     "title": "Dockerhub Stats",
     "description": "Golang function gives the count of repos a user has on the Docker hub",
@@ -84,15 +112,6 @@
     "network": "func_functions",
     "repo_url": "https://github.com/openfaas/faas",
     "readOnlyRootFilesystem": true
-  },
-  {
-    "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
-    "title": "Tesseract OCR",
-    "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
-    "image": "viveksyngh/openfaas-ocr:0.2.0",
-    "name": "ocr",
-    "network": "func_functions",
-    "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
   },
   {
     "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
@@ -107,16 +126,6 @@
     }
   },
   {
-    "title": "ASCII Cows",
-    "description": "Generate cartoons of ASCII cows",
-    "image": "alexellis2/ascii-cows-openfaas:0.1",
-    "name": "cows",
-    "fprocess": "node show_cow.js",
-    "network": "func_functions",
-    "repo_url": "https://github.com/alexellis/cows-docker",
-    "readOnlyRootFilesystem": true
-  },
-  {
     "icon": "https://nmap.org/images/nmap-logo-256x256.png",
     "title": "Nmap Security Scanner",
     "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
@@ -128,6 +137,16 @@
       "read_timeout": "300",
       "write_timeout": "300"
     }
+  },
+  {
+    "title": "ASCII Cows",
+    "description": "Generate cartoons of ASCII cows",
+    "image": "alexellis2/ascii-cows-openfaas:0.1",
+    "name": "cows",
+    "fprocess": "node show_cow.js",
+    "network": "func_functions",
+    "repo_url": "https://github.com/alexellis/cows-docker",
+    "readOnlyRootFilesystem": true
   },
   {
     "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
@@ -162,16 +181,6 @@
     }
   },
   {
-    "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
-    "title": "SSL/TLS cert info",
-    "description": "Returns SSL/TLS certificate information for a given URL",
-    "image": "stefanprodan/certinfo",
-    "name": "certinfo",
-    "network": "func_functions",
-    "repo_url": "https://github.com/stefanprodan/openfaas-certinfo",
-    "readOnlyRootFilesystem": true
-  },
-  {
     "title": "nslookup",
     "description": "Uses nslookup to return any IP address info on domains and URLs",
     "image": "jockdarock/nslookupfaas:master",
@@ -179,26 +188,6 @@
     "network": "func_functions",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
   },  
-  {
-    "title": "mememachine",
-    "description": "Turn any image into a meme.",
-    "image": "developius/faas-mememachine:0.2",
-    "name": "mememachine",
-    "network": "func_functions",
-    "repo_url": "https://github.com/developius/openfaas-mememachine",
-    "labels": {
-      "com.openfaas.ui.ext": "jpg"
-    }
-  },
-   {
-    "title": "Left-Pad",
-    "description": "left-pad on OpenFaaS",
-    "image": "functions/faas-leftpad:0.2",
-    "name": "leftpad",
-    "network": "func_functions",
-    "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
-    "readOnlyRootFilesystem": true
-  },
   {
     "title": "Docker Image Manifest Query",
     "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
@@ -209,26 +198,37 @@
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
   {
-  "title": "SentimentAnalysis",
-  "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-  "image": "functions/sentimentanalysis",
-  "envProcess": "python ./handler.py",
-  "name": "sentimentanalysis",
-  "network": "func_functions",
-  "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-  },
-  {
-    "title": "Face Detection with Pigo",
-    "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
-    "image": "esimov/pigo-openfaas:0.1",
-    "name": "face-detect-pigo",
+    "title": "face-detect with OpenCV",
+    "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
+    "image": "alexellis2/facedetect:0.1",
+    "name": "face-detect-opencv",
     "network": "func_functions",
-    "repo_url": "https://github.com/esimov/pigo-openfaas",
+    "repo_url": "https://github.com/alexellis/facedetect-openfaas",
     "readOnlyRootFilesystem": true,
     "environment": {
       "output_mode": "image",
       "input_mode": "url"
     },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
+  },
+  {
+    "title": "Left-Pad",
+    "description": "left-pad on OpenFaaS",
+    "image": "functions/faas-leftpad:0.2",
+    "name": "leftpad",
+    "network": "func_functions",
+    "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "mememachine",
+    "description": "Turn any image into a meme.",
+    "image": "developius/faas-mememachine:0.2",
+    "name": "mememachine",
+    "network": "func_functions",
+    "repo_url": "https://github.com/developius/openfaas-mememachine",
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
