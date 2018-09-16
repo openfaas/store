@@ -232,5 +232,21 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "title": "Content Aware Image Resize with Caire",
+    "description": "Resize images without distorting them by removing the unimportant parts.",
+    "image": "esimov/caire-openfaas:0.1",
+    "name": "caire-image-resizer",
+    "network": "func_functions",
+    "repo_url": "https://github.com/esimov/caire-openfaas",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "output_mode": "image",
+      "input_mode": "url"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
   }
 ]
