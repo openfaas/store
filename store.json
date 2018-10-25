@@ -85,6 +85,15 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "title": "Business Strategy Generator",
+    "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
+    "image": "functions/business-strategy-generator:0.1",
+    "name": "business-strategy-generator",
+    "network": "func_functions",
+    "repo_url": "https://github.com/alexellis/strategy_generator",
+    "readOnlyRootFilesystem": true
+  },
+  {
     "title": "NodeInfo",
     "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
     "image": "functions/nodeinfo:latest",
