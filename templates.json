@@ -1,6 +1,6 @@
 [
     {
-        "cli-lang": "csharp",
+        "template": "csharp",
         "platform": "x86_64",
         "language": "C#",
         "source": "openfaas",
@@ -9,7 +9,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "dockerfile",
+        "template": "dockerfile",
         "platform": "x86_64",
         "language": "Dockerfile",
         "source": "openfaas",
@@ -18,7 +18,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "go-armhf",
+        "template": "go-armhf",
         "platform": "armhf",
         "language": "Go",
         "source": "openfaas",
@@ -27,7 +27,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "go",
+        "template": "go",
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas",
@@ -36,7 +36,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "java8",
+        "template": "java8",
         "platform": "x86_64",
         "language": "Java",
         "source": "openfaas",
@@ -45,7 +45,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "node-arm64",
+        "template": "node-arm64",
         "platform": "arm64",
         "language": "NodeJS",
         "source": "openfaas",
@@ -54,7 +54,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "node",
+        "template": "node",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas",
@@ -63,7 +63,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "php7",
+        "template": "php7",
         "platform": "x86_64",
         "language": "PHP",
         "source": "openfaas",
@@ -72,7 +72,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "python-armhf",
+        "template": "python-armhf",
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas",
@@ -81,7 +81,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "python",
+        "template": "python",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas",
@@ -90,7 +90,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "python3-armhf",
+        "template": "python3-armhf",
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas",
@@ -99,7 +99,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "python3",
+        "template": "python3",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas",
@@ -108,7 +108,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "ruby",
+        "template": "ruby",
         "platform": "x86_64",
         "language": "Ruby",
         "source": "openfaas",
@@ -117,7 +117,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "node10-express-armhf",
+        "template": "node10-express-armhf",
         "platform": "armhf",
         "language": "NodeJS",
         "source": "openfaas-incubator",
@@ -126,7 +126,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "node10-express",
+        "template": "node10-express",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas-incubator",
@@ -135,7 +135,7 @@
         "official": "true"
     },
     {
-        "cli-lang": "ruby-http",
+        "template": "ruby-http",
         "platform": "x86_64",
         "language": "Ruby",
         "source": "openfaas-incubator",
@@ -144,7 +144,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "python27-flask",
+        "template": "python27-flask",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
@@ -153,7 +153,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "python3-flask-armhf",
+        "template": "python3-flask-armhf",
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas-incubator",
@@ -162,7 +162,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "python3-flask",
+        "template": "python3-flask",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
@@ -171,7 +171,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "node8-express-armhf",
+        "template": "node8-express-armhf",
         "platform": "armhf",
         "language": "NodeJS",
         "source": "openfaas-incubator",
@@ -180,7 +180,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "node8-express",
+        "template": "node8-express",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas-incubator",
@@ -189,7 +189,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "golang-http-armhf",
+        "template": "golang-http-armhf",
         "platform": "armhf",
         "language": "Go",
         "source": "openfaas-incubator",
@@ -198,7 +198,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "golang-http",
+        "template": "golang-http",
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas-incubator",
@@ -207,7 +207,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "golang-middleware-armhf",
+        "template": "golang-middleware-armhf",
         "platform": "armhf",
         "language": "Go",
         "source": "openfaas-incubator",
@@ -216,7 +216,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "golang-middleware",
+        "template": "golang-middleware",
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas-incubator",
@@ -225,7 +225,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "python3-debian",
+        "template": "python3-debian",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
@@ -234,7 +234,7 @@
         "official": "false"
     },
     {
-        "cli-lang": "powershell-template",
+        "template": "powershell-template",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
