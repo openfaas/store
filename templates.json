@@ -241,5 +241,14 @@
         "description": "Powershell Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/python3-debian",
         "official": "false"
+    },
+    {
+        "template": "rust",
+        "platform": "x86_64",
+        "language": "Rust",
+        "source": "booyaa",
+        "description": "Rust template",
+        "repo": "https://github.com/booyaa/openfaas-rust-template",
+        "official": "false"
     }
 ]
