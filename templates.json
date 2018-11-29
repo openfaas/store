@@ -250,5 +250,14 @@
         "description": "Rust template",
         "repo": "https://github.com/booyaa/openfaas-rust-template",
         "official": "false"
+    },
+    {
+        "template": "crystal",
+        "platform": "x86_64",
+        "language": "Crystal",
+        "source": "tpei",
+        "description": "Crystal template",
+        "repo": "https://github.com/tpei/crystal_openfaas",
+        "official": "false"
     }
 ]
