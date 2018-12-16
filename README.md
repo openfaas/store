@@ -32,7 +32,7 @@ We are using a .json file in this repository and GitHub's raw download CDN.
 
 See also: Google Play Store/Apple App Store.
 
-## Make a submission
+## Make a submission to the Function Store
 
 If you'd like to make a submission then raise an issue to propose it. This should follow the [CONTRIBUTION guide](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) for OpenFaaS.
 
@@ -98,3 +98,37 @@ You can set the file extension used by the UI to download a result from your fun
 * `environment`
 
 Set timeouts etc
+
+# OpenFaaS Template Store
+
+The Template Store contains all the templates from OpenFaaS and [OpenFaaS-Incubator](https://github.com/openfaas-incubator) organizations, along with user-defined templates which have been approved by the community.
+
+## How to submit to the Template Store
+
+If you'd like to see your template in the official store follow these steps:
+
+1. Open an issue to propose the template and include a link to your template repository. This should follow the [CONTRIBUTION guide](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) for OpenFaaS.
+2. Await feedback on, and subsequent approval of, your proposal from the community.
+3. Add your template to the `templates.json` file. Here is example of a template definition:
+```
+    {
+        "template": "go",
+        "platform": "x86_64",
+        "language": "Go",
+        "source": "openfaas",
+        "description": "Official Golang template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+```
+4. Open PR for your template to be merged in the Template Store
+
+Once merged you can see your template displayed by typing `faas-cli template store list` in the terminal.
+
+## Templates created by the community:
+
+Those are the custom templates created by the community:
+
+* [Rust template](https://github.com/booyaa/openfaas-rust-template) by [booyaa](https://github.com/booyaa/)
+* [Crystal template](https://github.com/tpei/crystal_openfaas) by [tpei](https://github.com/tpei/)
+* [C# HTTP template](https://github.com/distantcam/csharp-httprequest-template) by [distantcam](https://github.com/distantcam/)
