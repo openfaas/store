@@ -54,6 +54,15 @@
         "official": "true"
     },
     {
+        "template": "node-armhf",
+        "platform": "armhf",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "Official NodeJS 8 armhf template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "node",
         "platform": "x86_64",
         "language": "NodeJS",
