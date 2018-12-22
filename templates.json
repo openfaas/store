@@ -268,5 +268,14 @@
         "description": "Crystal template",
         "repo": "https://github.com/tpei/crystal_openfaas",
         "official": "false"
+    },
+    {
+        "template": "csharp-httprequest",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "distantcam",
+        "description": "C# HTTP template",
+        "repo": "https://github.com/distantcam/csharp-httprequest-template",
+        "official": "false"
     }
 ]
