@@ -238,8 +238,17 @@
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
-        "description": "Powershell Ubuntu:16.04 template",
-        "repo": "https://github.com/openfaas-incubator/python3-debian",
+        "description": "Powershell Core Ubuntu:16.04 template",
+        "repo": "https://github.com/openfaas-incubator/powershell-template",
+        "official": "false"
+    },
+    {
+        "template": "powershell-http-template",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Powershell Core HTTP Ubuntu:16.04 template",
+        "repo": "https://github.com/openfaas-incubator/powershell-http-template",
         "official": "false"
     },
     {
