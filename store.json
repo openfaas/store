@@ -221,5 +221,18 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "title": "Awesomify",
+    "description": "Make anyone or anything awesome! Pass in the name of a thing or person either in a POST body or a GET parameter named 'q'. The function will return an OGG/Opus audio file with your awesome thing awesomified. For best results use a singular name for your awesome thing. (SPOILER: The audio file contains the 'Everything is Awesome' track by Teegan and Sara mixed-up with your awesome thing.)",
+    "image": "diddledan/awesomify:0.1",
+    "name": "awesomify",
+    "repo_url": "https://github.com/diddledan/awesomify",
+    "environment": {
+      "content_type": "audio/ogg"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "ogg"
+    }
   }
 ]
