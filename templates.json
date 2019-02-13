@@ -387,6 +387,15 @@
         "official": "false"
     },
     {
+        "template": "swift",
+        "platform": "x86_64",
+        "language": "swift",
+        "source": "lorenalexm",
+        "description": "Swift 4.2 with Swift Package Manager",
+        "repo": "https://github.com/lorenalexm/swift-template-openfaas",
+        "official": "false"
+    },
+    {
         "template": "node10-express-service",
         "platform": "x86_64",
         "language": "NodeJS",
