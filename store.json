@@ -20,7 +20,7 @@
   {
     "title": "Inception",
     "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
-    "image": "alexellis/inception:2.1",
+    "image": "alexellis/inception:2019-02-17",
     "name": "inception",
     "fprocess": "python3 index.py",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
