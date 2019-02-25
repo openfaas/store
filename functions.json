@@ -2,7 +2,7 @@
     {
         "title": "NodeInfo",
         "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
-        "image": {
+        "images": {
             "arm64": "functions/nodeinfo:arm64",
             "armhf": "functions/nodeinfo:latest-armhf",
             "x86_64": "functions/nodeinfo:latest"
@@ -15,7 +15,7 @@
     {
         "title": "sha512sum",
         "description": "Generate shasums in 512 format",
-        "image": {
+        "images": {
             "arm64": "functions/alpine:latest-arm64"
         },
         "name": "sha512sum",
@@ -26,7 +26,7 @@
     {
         "title": "Figlet",
         "description": "Generate ASCII logos with the figlet CLI",
-        "image": {
+        "images": {
             "armhf": "functions/figlet:latest-armhf",
             "x86_64": "functions/figlet:0.9.6"
         },
@@ -38,7 +38,7 @@
         "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "title": "SSL/TLS cert info",
         "description": "Returns SSL/TLS certificate information for a given URL",
-        "image": {
+        "images": {
             "armhf": "rgee0/certinfo:armhf",
             "x86_64": "stefanprodan/certinfo"
         },
@@ -50,7 +50,7 @@
         "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
         "title": "Colorization",
         "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
-        "image": {
+        "images": {
             "x86_64": "alexellis2/openfaas-colorization:0.4.0"
         },
         "name": "colorise",
@@ -69,7 +69,7 @@
     {
         "title": "Inception",
         "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
-        "image": {
+        "images": {
             "x86_64": "alexellis/inception:2019-02-17"
         },
         "name": "inception",
@@ -84,7 +84,7 @@
         "title": "Have I Been Pwned",
         "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
         "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
-        "image": {
+        "images": {
             "x86_64": "functions/haveibeenpwned:0.1"
         },
         "name": "haveibeenpwned",
@@ -94,7 +94,7 @@
     {
         "title": "Face Detection with Pigo",
         "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
-        "image": {
+        "images": {
             "x86_64": "esimov/pigo-openfaas:0.1"
         },
         "name": "face-detect-pigo",
@@ -111,7 +111,7 @@
     {
         "title": "SentimentAnalysis",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-        "image": {
+        "images": {
             "x86_64": "functions/sentimentanalysis"
         },
         "envProcess": "python ./handler.py",
@@ -121,7 +121,7 @@
     {
         "title": "Business Strategy Generator",
         "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-        "image": {
+        "images": {
             "x86_64": "functions/business-strategy-generator:0.1"
         },
         "name": "business-strategy-generator",
@@ -133,7 +133,7 @@
         "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
         "title": "Tesseract OCR",
         "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
-        "image": {
+        "images": {
             "x86_64": "viveksyngh/openfaas-ocr:0.2.0"
         },
         "name": "ocr",
@@ -143,7 +143,7 @@
         "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
         "title": "Dockerhub Stats",
         "description": "Golang function gives the count of repos a user has on the Docker hub",
-        "image": {
+        "images": {
             "x86_64": "functions/hubstats"
         },
         "name": "hubstats",
@@ -154,7 +154,7 @@
         "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
         "title": "QR Code Generator - Go",
         "description": "QR Code generator using Go",
-        "image": {
+        "images": {
             "x86_64": "johnmccabe/qrcode"
         },
         "name": "qrcode-go",
@@ -167,7 +167,7 @@
         "icon": "https://nmap.org/images/nmap-logo-256x256.png",
         "title": "Nmap Security Scanner",
         "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
-        "image": {
+        "images": {
             "x86_64": "functions/nmap:0.1"
         },
         "name": "nmap",
@@ -180,7 +180,7 @@
     {
         "title": "ASCII Cows",
         "description": "Generate cartoons of ASCII cows",
-        "image": {
+        "images": {
             "x86_64": "alexellis2/ascii-cows-openfaas:0.1"
         },
         "name": "cows",
@@ -192,7 +192,7 @@
         "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
         "title": "YouTube Video Downloader",
         "description": "Download YouTube videos as a function",
-        "image": {
+        "images": {
             "x86_64": "alexellis2/faas-youtubedl"
         },
         "name": "youtube-dl",
@@ -209,7 +209,7 @@
         "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
         "title": "OpenFaaS Text-to-Speech",
         "description": "Generate an MP3 of text using Google's Text-to-Speech",
-        "image": {
+        "images": {
             "x86_64": "rorpage/text-to-speech"
         },
         "name": "text-to-speech",
@@ -225,7 +225,7 @@
     {
         "title": "nslookup",
         "description": "Uses nslookup to return any IP address info on domains and URLs",
-        "image": {
+        "images": {
             "x86_64": "jockdarock/nslookupfaas:master",
             "armhf": "jockdarock/nslookup-arm-faas:latest-armhf"
         },
@@ -235,8 +235,9 @@
     {
         "title": "Docker Image Manifest Query",
         "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
-        "image": {
-            "x86_64": "rgee0/of-mquery:1.2"
+        "images": {
+            "x86_64": "rgee0/of-mquery:1.2",
+            "armhf": "rgee0/of-mquery:1.2"
         },
         "fprocess": "./mquery",
         "name": "mquery",
@@ -245,7 +246,7 @@
     {
         "title": "face-detect with OpenCV",
         "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
-        "image": {
+        "images": {
             "x86_64": "alexellis2/facedetect:0.1"
         },
         "name": "face-detect-opencv",
@@ -262,7 +263,7 @@
     {
         "title": "Left-Pad",
         "description": "left-pad on OpenFaaS",
-        "image": {
+        "images": {
             "x86_64": "functions/faas-leftpad:0.2",
             "armhf": "rgee0/faas-leftpad"
         },
@@ -273,7 +274,7 @@
     {
         "title": "mememachine",
         "description": "Turn any image into a meme.",
-        "image": {
+        "images": {
             "x86_64": "developius/faas-mememachine:0.2"
         },
         "name": "mememachine",
