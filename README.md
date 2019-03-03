@@ -91,3 +91,11 @@ If you'd like to see your template in the official store follow these steps:
 4. Open PR for your template to be merged in the Template Store
 
 Once merged you can see your template displayed by typing `faas-cli template store list` in the terminal.
+
+## Templates created by the community:
+
+Those are the custom templates created by the community:
+
+* [Rust template](https://github.com/booyaa/openfaas-rust-template) by [booyaa](https://github.com/booyaa/)
+* [Crystal template](https://github.com/tpei/crystal_openfaas) by [tpei](https://github.com/tpei/)
+* [C# HTTP template](https://github.com/distantcam/csharp-httprequest-template) by [distantcam](https://github.com/distantcam/)
