@@ -277,5 +277,14 @@
         "description": "C# HTTP template",
         "repo": "https://github.com/distantcam/csharp-httprequest-template",
         "official": "false"
+    },
+    {
+        "template": "vertx-native",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "pmlopes",
+        "description": "Eclipse Vert.x native image template",
+        "repo": "https://github.com/pmlopes/openfaas-vertx-native-template",
+        "official": "false"
     }
 ]
