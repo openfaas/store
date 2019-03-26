@@ -286,5 +286,41 @@
         "description": "Eclipse Vert.x native image template",
         "repo": "https://github.com/pmlopes/openfaas-vertx-native-template",
         "official": "false"
+    },
+    {
+        "template": "swift",
+        "platform": "x86_64",
+        "language": "Swift",
+        "source": "affix",
+        "description": "Swift 4.2 Template",
+        "repo": "https://github.com/affix/openfaas-templates-affix/",
+        "official": "false"
+    },
+    {
+        "template": "lua53",
+        "platform": "x86_64",
+        "language": "Lua",
+        "source": "affix",
+        "description": "Lua 5.3 Template",
+        "repo": "https://github.com/affix/openfaas-templates-affix/",
+        "official": "false"
+    },
+    {
+        "template": "vala",
+        "platform": "x86_64",
+        "language": "Vala",
+        "source": "affix",
+        "description": "Vala Template",
+        "repo": "https://github.com/affix/openfaas-templates-affix/",
+        "official": "false"
+    },
+    {
+        "template": "vala-http",
+        "platform": "x86_64",
+        "language": "Vala",
+        "source": "affix",
+        "description": "Non-Forking Vala Template",
+        "repo": "https://github.com/affix/openfaas-templates-affix/",
+        "official": "false"
     }
 ]
