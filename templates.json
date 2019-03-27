@@ -322,5 +322,14 @@
         "description": "Non-Forking Vala Template",
         "repo": "https://github.com/affix/openfaas-templates-affix/",
         "official": "false"
+    },
+    {
+        "template": "quarkus-native",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "pmlopes",
+        "description": "Quarkus.io native image template",
+        "repo": "https://github.com/pmlopes/openfaas-quarkus-native-template",
+        "official": "false"
     }
 ]
