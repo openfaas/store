@@ -36,9 +36,12 @@ See also: Google Play Store/Apple App Store.
 
 If you'd like to make a submission then raise an issue to propose it. This should follow the [CONTRIBUTION guide](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) for OpenFaaS.
 
-Here's an example of a function definition for the registry:
+Here are two example function definitions.
 
-```
+### Version 0.1.0 (`store.json`)
+
+```json
+{
   {
     "title": "Inception",
     "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
@@ -54,6 +57,35 @@ Here's an example of a function definition for the registry:
       "write_timeout": "30"
     }
   }
+}
+```
+
+### Version 0.2.0 (`functions.json`)
+
+```json
+{
+    "version": "0.2.0",
+    "functions": [
+    {
+        "title": "NodeInfo",
+        "name": "nodeinfo",
+        "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+        "images": {
+            "arm64": "functions/nodeinfo:arm64",
+            "armhf": "functions/nodeinfo:latest-armhf",
+            "x86_64": "functions/nodeinfo:latest"
+        },
+        "labels": {
+          "com.openfaas.ui.ext": "json"
+        },
+        "environment": {
+          "write_timeout": "30"
+        },
+        "fprocess": "node main.js",
+        "network": "func_functions",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+    }
+}
 ```
 
 ### See also:
