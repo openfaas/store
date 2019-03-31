@@ -1,59 +1,61 @@
-[
+{
+    "version": "0.2.0",
+    "functions": [
     {
         "title": "NodeInfo",
+        "name": "nodeinfo",
         "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
         "images": {
             "arm64": "functions/nodeinfo:arm64",
             "armhf": "functions/nodeinfo:latest-armhf",
             "x86_64": "functions/nodeinfo:latest"
         },
-        "name": "nodeinfo",
         "fprocess": "node main.js",
         "network": "func_functions",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
     },
     {
         "title": "sha512sum",
+        "name": "sha512sum",
         "description": "Generate shasums in 512 format",
         "images": {
             "arm64": "functions/alpine:latest-arm64"
         },
-        "name": "sha512sum",
         "fprocess": "sha512sum",
         "network": "func_functions",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
     },
     {
         "title": "Figlet",
+        "name": "figlet",
         "description": "Generate ASCII logos with the figlet CLI",
         "images": {
             "armhf": "functions/figlet:latest-armhf",
             "x86_64": "functions/figlet:0.9.6"
         },
-        "name": "figlet",
         "fprocess": "figlet",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
     },
     {
-        "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "title": "SSL/TLS cert info",
+        "name": "certinfo",
         "description": "Returns SSL/TLS certificate information for a given URL",
+        "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "images": {
             "armhf": "rgee0/certinfo:armhf",
             "x86_64": "stefanprodan/certinfo"
         },
-        "name": "certinfo",
         "network": "func_functions",
         "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
     },
     {
-        "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
         "title": "Colorization",
+        "name": "colorise",
         "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
+        "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
         "images": {
             "x86_64": "alexellis2/openfaas-colorization:0.4.0"
         },
-        "name": "colorise",
         "fprocess": "python -u index.py",
         "repo_url": "https://github.com/alexellis/repaint-the-past",
         "labels": {
@@ -68,11 +70,11 @@
     },
     {
         "title": "Inception",
+        "name": "inception",
         "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
         "images": {
             "x86_64": "alexellis/inception:2019-02-17"
         },
-        "name": "inception",
         "fprocess": "python3 index.py",
         "repo_url": "https://github.com/faas-and-furious/inception-function",
         "environment": {
@@ -283,4 +285,5 @@
             "com.openfaas.ui.ext": "jpg"
         }
     }
-]
+    ]
+}
