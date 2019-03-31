@@ -41,7 +41,7 @@ Here are two example function definitions.
 ### Version 0.1.0 (`store.json`)
 
 ```json
-{
+[
   {
     "title": "Inception",
     "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
@@ -57,7 +57,7 @@ Here are two example function definitions.
       "write_timeout": "30"
     }
   }
-}
+]
 ```
 
 ### Version 0.2.0 (`functions.json`)
@@ -85,6 +85,7 @@ Here are two example function definitions.
         "network": "func_functions",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
     }
+  ]
 }
 ```
 
