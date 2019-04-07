@@ -212,7 +212,8 @@
         "title": "OpenFaaS Text-to-Speech",
         "description": "Generate an MP3 of text using Google's Text-to-Speech",
         "images": {
-            "x86_64": "rorpage/text-to-speech"
+            "x86_64": "rorpage/text-to-speech",
+            "armhf": "rgee0/text-to-speech:armhf-latest"
         },
         "name": "text-to-speech",
         "repo_url": "https://github.com/rorpage/openfaas-text-to-speech",

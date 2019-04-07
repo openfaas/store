@@ -45,5 +45,20 @@
     "name": "certinfo",
     "network": "func_functions",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+  },
+    {
+    "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
+    "title": "OpenFaaS Text-to-Speech",
+    "description": "Generate an MP3 of text using Google's Text-to-Speech",
+    "image": "rgee0/text-to-speech:armhf-latest",
+    "name": "text-to-speech",
+    "repo_url": "https://github.com/rgee0/openfaas-text-to-speech/tree/armhf",
+    "labels": {
+      "com.openfaas.ui.ext": "mp3"
+    },
+    "environment": { 
+      "read_timeout": "60",
+      "write_timeout": "60"
+    }
   }
 ]
