@@ -1,6 +1,6 @@
 # OpenFaaS Function Store
 
-[![Build Status](https://api.travis-ci.org/openfaas/store.svg?branch=master)]
+[![Build Status](https://travis-ci.org/openfaas/store.svg?branch=master)](https://travis-ci.org/openfaas/store)
 
 The Function Store is a curated index of OpenFaaS functions which have been tested by the community and chosen for their experience.
 
