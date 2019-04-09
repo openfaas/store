@@ -340,5 +340,14 @@
         "description": "Quarkus.io native image template",
         "repo": "https://github.com/pmlopes/openfaas-quarkus-native-template",
         "official": "false"
+    },
+    {
+        "template": "node-armhf-multiarch",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "tiborv",
+        "description": "NodeJS 8 armhf template than can be built on a x86_64 platform using multiarch",
+        "repo": "https://github.com/tiborv/openfaas-template-armhf-mulitarch",
+        "official": "false"
     }
 ]
