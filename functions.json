@@ -31,7 +31,7 @@
         "description": "Generate ASCII logos with the figlet CLI",
         "images": {
             "armhf": "functions/figlet:latest-armhf",
-            "x86_64": "functions/figlet:0.9.6"
+            "x86_64": "functions/figlet:0.13.0"
         },
         "fprocess": "figlet",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
@@ -87,7 +87,7 @@
         "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
         "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
         "images": {
-            "x86_64": "functions/haveibeenpwned:0.1"
+            "x86_64": "functions/haveibeenpwned:0.13.0"
         },
         "name": "haveibeenpwned",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
@@ -124,7 +124,7 @@
         "title": "Business Strategy Generator",
         "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
         "images": {
-            "x86_64": "functions/business-strategy-generator:0.1"
+            "x86_64": "functions/business-strategy-generator:0.13.0"
         },
         "name": "business-strategy-generator",
         "repo_url": "https://github.com/alexellis/strategy_generator",
@@ -170,7 +170,7 @@
         "title": "Nmap Security Scanner",
         "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
         "images": {
-            "x86_64": "functions/nmap:0.1"
+            "x86_64": "functions/nmap:0.13.0"
         },
         "name": "nmap",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
