@@ -33,7 +33,7 @@
     "title": "Have I Been Pwned",
     "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
     "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
-    "image": "functions/haveibeenpwned:0.1",
+    "image": "functions/haveibeenpwned:0.13.0",
     "name": "haveibeenpwned",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
     "readOnlyRootFilesystem": true
@@ -73,7 +73,7 @@
   {
     "title": "Figlet",
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
-    "image": "functions/figlet:0.9.6",
+    "image": "functions/figlet:0.13.0",
     "name": "figlet",
     "repo_url": "https://github.com/faas-and-furious/figlet",
     "readOnlyRootFilesystem": true
@@ -81,7 +81,7 @@
   {
     "title": "Business Strategy Generator",
     "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-    "image": "functions/business-strategy-generator:0.1",
+    "image": "functions/business-strategy-generator:0.13.0",
     "name": "business-strategy-generator",
     "repo_url": "https://github.com/alexellis/strategy_generator",
     "readOnlyRootFilesystem": true
@@ -127,7 +127,7 @@
     "icon": "https://nmap.org/images/nmap-logo-256x256.png",
     "title": "Nmap Security Scanner",
     "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
-    "image": "functions/nmap:0.1",
+    "image": "functions/nmap:0.13.0",
     "name": "nmap",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
     "environment": { 
