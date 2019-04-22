@@ -116,7 +116,7 @@
     "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
     "title": "QR Code Generator - Go",
     "description": "QR Code generator using Go",
-    "image": "johnmccabe/qrcode",
+    "image": "alexellis/qrcode:0.1",
     "name": "qrcode-go",
     "repo_url": "https://github.com/faas-and-furious/qrcode",
     "labels": {
