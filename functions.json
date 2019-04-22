@@ -136,7 +136,7 @@
         "title": "Tesseract OCR",
         "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
         "images": {
-            "x86_64": "viveksyngh/openfaas-ocr:0.2.0"
+            "x86_64": "viveksyngh/openfaas-ocr:0.3.0"
         },
         "name": "ocr",
         "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
