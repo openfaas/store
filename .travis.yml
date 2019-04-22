@@ -4,7 +4,9 @@ install:
   - sudo apt-get install jq
 
 script:
+  - jq empty functions.json
   - jq empty store.json
   - jq empty templates.json
   - jq empty store-arm64.json 
   - jq empty store-armhf.json
+  - ./ci/function_images_check.sh
