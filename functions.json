@@ -285,6 +285,18 @@
         "labels": {
             "com.openfaas.ui.ext": "jpg"
         }
+    },
+    {
+        "title": "LSB Steganography",
+        "description": "LSB steganography encoding/decoding on base64 images",
+        "images": {
+            "x86_64": "auyer/fn-steganography"
+        },
+        "name": "steganography",
+        "repo_url": "https://github.com/auyer/fn-steganography",
+        "labels": {
+            "com.openfaas.ui.ext": "json"
+        }
     }
     ]
 }
