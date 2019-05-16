@@ -275,7 +275,7 @@
         "language": "Rust",
         "source": "booyaa",
         "description": "Rust template",
-        "repo": "https://github.com/booyaa/openfaas-rust-template",
+        "repo": "https://github.com/openfaas-incubator/openfaas-rust-template",
         "official": "false"
     },
     {
