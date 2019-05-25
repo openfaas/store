@@ -48,6 +48,22 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "title": "Face blur by Endre Simo",
+    "description": "Blur out faces detected in JPEGs. Invoke with the URL to the image.",
+    "image": "esimov/pigo-openfaas-faceblur:0.1",
+    "name": "face-detect-pigo",
+    "repo_url": "https://github.com/esimov/pigo-openfaas",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "input_mode": "url",
+      "output_mode": "image",
+      "content_type": "image/jpeg"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
+  },
+  {
     "title": "Face Detection with Pigo",
     "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
     "image": "esimov/pigo-openfaas:0.1",
