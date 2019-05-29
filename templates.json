@@ -18,6 +18,15 @@
         "official": "true"
     },
     {
+        "template": "dockerfile-armhf",
+        "platform": "armhf",
+        "language": "Dockerfile",
+        "source": "openfaas",
+        "description": "Official Dockerfile armhf template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "go-armhf",
         "platform": "armhf",
         "language": "Go",
@@ -123,7 +132,7 @@
         "source": "openfaas",
         "description": "Official Ruby 2.5 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node10-express-arm64",
@@ -132,7 +141,7 @@
         "source": "openfaas-incubator",
         "description": "NodeJS 10 Express arm64 template",
         "repo": "https://github.com/openfaas-incubator/node10-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node10-express-armhf",
@@ -141,7 +150,7 @@
         "source": "openfaas-incubator",
         "description": "NodeJS 10 Express armhf template",
         "repo": "https://github.com/openfaas-incubator/node10-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node10-express",
@@ -159,7 +168,7 @@
         "source": "openfaas-incubator",
         "description": "Ruby 2.4 HTTP template",
         "repo": "https://github.com/openfaas-incubator/ruby-http",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python27-flask",
@@ -168,7 +177,7 @@
         "source": "openfaas-incubator",
         "description": "Python 2.7 Flask template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-flask-armhf",
@@ -177,7 +186,7 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Flask armhf template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-flask",
@@ -186,7 +195,7 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Flask template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node8-express-armhf",
@@ -195,7 +204,7 @@
         "source": "openfaas-incubator",
         "description": "NodeJS 8 Express armhf template",
         "repo": "https://github.com/openfaas-incubator/node8-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node8-express",
@@ -204,7 +213,7 @@
         "source": "openfaas-incubator",
         "description": "NodeJS 8 Express template",
         "repo": "https://github.com/openfaas-incubator/node8-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-http-armhf",
@@ -213,7 +222,7 @@
         "source": "openfaas-incubator",
         "description": "Golang HTTP armhf template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-http",
@@ -222,7 +231,7 @@
         "source": "openfaas-incubator",
         "description": "Golang HTTP template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-middleware-armhf",
@@ -231,7 +240,7 @@
         "source": "openfaas-incubator",
         "description": "Golang Middleware armhf template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-middleware",
@@ -240,7 +249,7 @@
         "source": "openfaas-incubator",
         "description": "Golang Middleware template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-debian",
@@ -249,7 +258,7 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Debian template",
         "repo": "https://github.com/openfaas-incubator/python3-debian",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "powershell-template",
@@ -258,7 +267,7 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "powershell-http-template",
@@ -267,7 +276,7 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core HTTP Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "rust",
