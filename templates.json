@@ -358,5 +358,14 @@
         "description": "Quarkus.io native image template",
         "repo": "https://github.com/pmlopes/openfaas-quarkus-native-template",
         "official": "false"
+    },
+    {
+        "template": "perl-alpine",
+        "platform": "x86_64",
+        "language": "Perl",
+        "source": "tmiklas",
+        "description": "Perl language template based on Alpine image",
+        "repo": "https://github.com/tmiklas/openfaas-perl-templates",
+        "official": "false"
     }
 ]
