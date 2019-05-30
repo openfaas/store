@@ -298,6 +298,7 @@
         "images": {
             "x86_64": "alexellis2/normalisecolor:0.2.1"
         },
+        "icon": "https://github.com/alexellis/repaint-the-past/raw/master/normalise-color-icon.png",
         "name": "normalisecolor",
         "repo_url": "https://github.com/alexellis/repaint-the-past",
         "readOnlyRootFilesystem": false
