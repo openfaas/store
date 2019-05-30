@@ -230,6 +230,7 @@
   },
   {
     "title": "normalisecolor",
+    "icon": "https://github.com/alexellis/repaint-the-past/raw/master/normalise-color-icon.png",
     "description": "Automatically fix white-balance in photos through imagemagick.",
     "image": "alexellis2/normalisecolor:0.2.1",
     "name": "normalisecolor",
