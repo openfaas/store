@@ -367,5 +367,14 @@
         "description": "F# template for OpenFaaS",
         "repo": "https://github.com/hayer/faas-fsharp-template",
         "official": "true"
+    },
+    {
+        "template": "perl-alpine",
+        "platform": "x86_64",
+        "language": "Perl",
+        "source": "tmiklas",
+        "description": "Perl language template based on Alpine image",
+        "repo": "https://github.com/tmiklas/openfaas-perl-templates",
+        "official": "false"
     }
 ]
