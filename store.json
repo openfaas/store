@@ -3,7 +3,7 @@
     "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
     "title": "Colorization",
     "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
-    "image": "alexellis2/openfaas-colorization:0.4.0",
+    "image": "alexellis2/openfaas-colorization:0.4.1",
     "name": "colorise",
     "fprocess": "python -u index.py",
     "repo_url": "https://github.com/alexellis/repaint-the-past",
@@ -227,6 +227,22 @@
     "name": "leftpad",
     "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
     "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "normalisecolor",
+    "description": "Automatically fix white-balance in photos through imagemagick.",
+    "image": "alexellis2/normalisecolor:0.2.1",
+    "name": "normalisecolor",
+    "fprocess": "convert - -flatten +matte -separate -normalize -combine fd:1",
+    "repo_url": "https://github.com/alexellis/repaint-the-past",
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    },
+    "environment": {
+      "read_timeout": "60",
+      "write_timeout": "60",
+      "write_debug": "false"
+    }
   },
   {
     "title": "mememachine",
