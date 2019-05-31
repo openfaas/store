@@ -198,6 +198,24 @@
         "official": "true"
     },
     {
+        "template": "python3-http",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 with Flask and HTTP",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
+    },
+    {
+        "template": "python3-http-armhf",
+        "platform": "armhf",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 with Flask and HTTP for ARMHF",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
+    },
+    {
         "template": "node8-express-armhf",
         "platform": "armhf",
         "language": "NodeJS",
