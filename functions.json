@@ -11,7 +11,6 @@
             "x86_64": "functions/nodeinfo:latest"
         },
         "fprocess": "node main.js",
-        "network": "func_functions",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
     },
     {
@@ -22,7 +21,6 @@
             "arm64": "functions/alpine:latest-arm64"
         },
         "fprocess": "sha512sum",
-        "network": "func_functions",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
     },
     {
@@ -45,7 +43,6 @@
             "armhf": "rgee0/certinfo:armhf",
             "x86_64": "stefanprodan/certinfo"
         },
-        "network": "func_functions",
         "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
     },
     {
