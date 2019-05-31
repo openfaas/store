@@ -43,7 +43,6 @@
     "description": "Returns SSL/TLS certificate information for a given URL",
     "image": "rgee0/certinfo:armhf",
     "name": "certinfo",
-    "network": "func_functions",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
   },
     {
