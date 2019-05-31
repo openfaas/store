@@ -60,8 +60,8 @@
         },
         "environment": {
             "url_mode": "true",
-            "read_timeout": "60",
-            "write_timeout": "60",
+            "read_timeout": "60s",
+            "write_timeout": "60s",
             "write_debug": "false"
         }
     },
@@ -75,8 +75,8 @@
         "fprocess": "python3 index.py",
         "repo_url": "https://github.com/faas-and-furious/inception-function",
         "environment": {
-            "read_timeout": "60",
-            "write_timeout": "60"
+            "read_timeout": "60s",
+            "write_timeout": "60s"
         }
     },
     {
@@ -172,8 +172,8 @@
         "name": "nmap",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
         "environment": {
-            "read_timeout": "300",
-            "write_timeout": "300"
+            "read_timeout": "300s",
+            "write_timeout": "300s"
         }
     },
     {
@@ -200,8 +200,8 @@
             "com.openfaas.ui.ext": "mp4"
         },
         "environment": {
-            "read_timeout": "300",
-            "write_timeout": "300"
+            "read_timeout": "300s",
+            "write_timeout": "300s"
         }
     },
     {
@@ -218,8 +218,8 @@
             "com.openfaas.ui.ext": "mp3"
         },
         "environment": {
-            "read_timeout": "60",
-            "write_timeout": "60"
+            "read_timeout": "60s",
+            "write_timeout": "60s"
         }
     },
     {

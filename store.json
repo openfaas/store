@@ -12,8 +12,8 @@
     },
     "environment": {
       "url_mode": "true",
-      "read_timeout": "60",
-      "write_timeout": "60",
+      "read_timeout": "60s",
+      "write_timeout": "60s",
       "write_debug": "false"
     }
   },
@@ -24,9 +24,9 @@
     "name": "inception",
     "fprocess": "python3 index.py",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
-    "environment": { 
-      "read_timeout": "60",
-      "write_timeout": "60"
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s"
     }
   },
   {
@@ -85,7 +85,7 @@
     "envProcess": "python ./handler.py",
     "name": "sentimentanalysis",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-    },
+  },
   {
     "title": "Figlet",
     "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
@@ -146,9 +146,9 @@
     "image": "functions/nmap:0.13.0",
     "name": "nmap",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
-    "environment": { 
-      "read_timeout": "300",
-      "write_timeout": "300"
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
     }
   },
   {
@@ -170,9 +170,9 @@
     "labels": {
       "com.openfaas.ui.ext": "mp4"
     },
-    "environment": { 
-      "read_timeout": "300",
-      "write_timeout": "300"
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
     }
   },
   {
@@ -185,9 +185,9 @@
     "labels": {
       "com.openfaas.ui.ext": "mp3"
     },
-    "environment": { 
-      "read_timeout": "60",
-      "write_timeout": "60"
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s"
     }
   },
   {
@@ -196,12 +196,12 @@
     "image": "jockdarock/nslookupfaas:master",
     "name": "nslookup",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
-  },  
+  },
   {
     "title": "Docker Image Manifest Query",
     "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
     "image": "rgee0/of-mquery:1.2",
-    "fprocess": "./mquery", 
+    "fprocess": "./mquery",
     "name": "mquery",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
@@ -240,8 +240,8 @@
       "com.openfaas.ui.ext": "jpg"
     },
     "environment": {
-      "read_timeout": "60",
-      "write_timeout": "60",
+      "read_timeout": "60s",
+      "write_timeout": "60s",
       "write_debug": "false"
     }
   },

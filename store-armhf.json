@@ -26,7 +26,7 @@
     "title": "Manifest Query",
     "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
     "image": "rgee0/of-mquery:1.2",
-    "fprocess": "./mquery", 
+    "fprocess": "./mquery",
     "name": "mquery",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
@@ -37,7 +37,7 @@
     "name": "nslookup",
     "repo_url": "https://github.com/jockdarock/nslookup-arm-faas"
   },
-    {
+  {
     "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
     "title": "SSL/TLS cert info",
     "description": "Returns SSL/TLS certificate information for a given URL",
@@ -45,7 +45,7 @@
     "name": "certinfo",
     "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
   },
-    {
+  {
     "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
     "title": "OpenFaaS Text-to-Speech",
     "description": "Generate an MP3 of text using Google's Text-to-Speech",
@@ -55,9 +55,9 @@
     "labels": {
       "com.openfaas.ui.ext": "mp3"
     },
-    "environment": { 
-      "read_timeout": "60",
-      "write_timeout": "60"
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s"
     }
   }
 ]
