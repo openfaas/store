@@ -108,6 +108,15 @@
         }
     },
     {
+        "title": "curl",
+        "description": "Use curl for network diagnostics, pass the full command-line to the function",
+        "images": {
+            "x86_64": "alexellis/curl:0.1.1"
+        },
+        "name": "curl",
+        "repo_url": "https://github.com/alexellis/curl-function"
+    },
+    {
         "title": "SentimentAnalysis",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
         "images": {
@@ -116,17 +125,6 @@
         "envProcess": "python ./handler.py",
         "name": "sentimentanalysis",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-    },
-    {
-        "title": "Business Strategy Generator",
-        "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-        "images": {
-            "x86_64": "functions/business-strategy-generator:0.13.0"
-        },
-        "name": "business-strategy-generator",
-        "repo_url": "https://github.com/alexellis/strategy_generator",
-        "readOnlyRootFilesystem": true,
-        "platform": "x86_64"
     },
     {
         "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
@@ -311,6 +309,17 @@
         "labels": {
             "com.openfaas.ui.ext": "jpg"
         }
+    },
+    {
+        "title": "Business Strategy Generator",
+        "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
+        "images": {
+            "x86_64": "functions/business-strategy-generator:0.13.0"
+        },
+        "name": "business-strategy-generator",
+        "repo_url": "https://github.com/alexellis/strategy_generator",
+        "readOnlyRootFilesystem": true,
+        "platform": "x86_64"
     }
     ]
 }

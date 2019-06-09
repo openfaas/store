@@ -64,21 +64,6 @@
     }
   },
   {
-    "title": "Face Detection with Pigo",
-    "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
-    "image": "esimov/pigo-openfaas:0.1",
-    "name": "face-detect-pigo",
-    "repo_url": "https://github.com/esimov/pigo-openfaas",
-    "readOnlyRootFilesystem": true,
-    "environment": {
-      "output_mode": "image",
-      "input_mode": "url"
-    },
-    "labels": {
-      "com.openfaas.ui.ext": "jpg"
-    }
-  },
-  {
     "title": "SentimentAnalysis",
     "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
     "image": "functions/sentimentanalysis",
@@ -95,11 +80,26 @@
     "readOnlyRootFilesystem": true
   },
   {
-    "title": "Business Strategy Generator",
-    "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-    "image": "functions/business-strategy-generator:0.13.0",
-    "name": "business-strategy-generator",
-    "repo_url": "https://github.com/alexellis/strategy_generator",
+    "title": "Face Detection with Pigo",
+    "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
+    "image": "esimov/pigo-openfaas:0.1",
+    "name": "face-detect-pigo",
+    "repo_url": "https://github.com/esimov/pigo-openfaas",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "output_mode": "image",
+      "input_mode": "url"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
+  },
+  {
+    "title": "curl",
+    "description": "Use curl for network diagnostics, pass the full command-line to the function",
+    "image": "alexellis/curl:0.1.1",
+    "name": "curl",
+    "repo_url": "https://github.com/alexellis/curl-function",
     "readOnlyRootFilesystem": true
   },
   {
@@ -267,5 +267,13 @@
     "labels": {
       "com.openfaas.ui.ext": "ogg"
     }
+  },
+  {
+    "title": "Business Strategy Generator",
+    "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
+    "image": "functions/business-strategy-generator:0.13.0",
+    "name": "business-strategy-generator",
+    "repo_url": "https://github.com/alexellis/strategy_generator",
+    "readOnlyRootFilesystem": true
   }
 ]
