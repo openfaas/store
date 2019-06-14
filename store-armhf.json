@@ -59,5 +59,20 @@
       "read_timeout": "60s",
       "write_timeout": "60s"
     }
+  },
+  {
+    "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
+    "title": "YouTube Video Downloader",
+    "description": "Download YouTube videos as a function",
+    "image": "rgee0/faas-youtubedl",
+    "name": "youtube-dl",
+    "repo_url": "https://github.com/faas-and-furious/youtube-dl",
+    "labels": {
+      "com.openfaas.ui.ext": "mp4"
+    },
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
+    }
   }
 ]
