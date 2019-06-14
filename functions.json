@@ -190,7 +190,8 @@
         "title": "YouTube Video Downloader",
         "description": "Download YouTube videos as a function",
         "images": {
-            "x86_64": "alexellis2/faas-youtubedl"
+            "armhf": "rgee0/faas-youtubedl",
+            "x86_64": "rgee0/faas-youtubedl"
         },
         "name": "youtube-dl",
         "repo_url": "https://github.com/faas-and-furious/youtube-dl",
