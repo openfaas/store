@@ -56,7 +56,7 @@
         "fprocess": "python -u index.py",
         "repo_url": "https://github.com/alexellis/repaint-the-past",
         "labels": {
-            "com.openfaas.ui.ext": "png"
+            "com.openfaas.ui.ext": "jpg"
         },
         "environment": {
             "url_mode": "true",
