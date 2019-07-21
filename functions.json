@@ -321,6 +321,25 @@
         "repo_url": "https://github.com/alexellis/strategy_generator",
         "readOnlyRootFilesystem": true,
         "platform": "x86_64"
+    },
+    {
+        "title": "Line Drawing Generator from a photograph",
+        "description": "Automatically generates a sketch like image art based on the provided image",
+        "images": {
+            "x86_64": "esimov/colidr-openfaas:0.1"
+        },
+        "name": "coherent-line-drawing",
+        "repo_url": "https://github.com/esimov/openfaas-coherent-line-drawing",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+			"input_mode": "url",
+			"output_mode": "image",
+			"content_type": "image/jpeg",
+			"write_timeout": "200s"
+		},
+		"labels": {
+		"com.openfaas.ui.ext": "jpg"
+		}
     }
     ]
 }
