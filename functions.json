@@ -332,14 +332,14 @@
         "repo_url": "https://github.com/esimov/openfaas-coherent-line-drawing",
         "readOnlyRootFilesystem": true,
         "environment": {
-			"input_mode": "url",
-			"output_mode": "image",
-			"content_type": "image/jpeg",
-			"write_timeout": "200s"
+		    "input_mode": "url",
+		    "output_mode": "image",
+		    "content_type": "image/jpeg",
+		    "write_timeout": "200s"
 		},
-		"labels": {
-		"com.openfaas.ui.ext": "jpg"
-		}
+	    "labels": {
+		    "com.openfaas.ui.ext": "jpg"
+	    }
     }
     ]
 }
