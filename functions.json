@@ -335,7 +335,7 @@
 		    "input_mode": "url",
 		    "output_mode": "image",
 		    "content_type": "image/jpeg",
-		    "write_timeout": "200s"
+		    "write_timeout": "300s"
 		},
 	    "labels": {
 		    "com.openfaas.ui.ext": "jpg"
