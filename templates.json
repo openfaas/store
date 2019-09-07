@@ -387,6 +387,15 @@
         "official": "false"
     },
     {
+        "template": "node10-koa",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "EqualMa",
+        "description": "Node.js 10 koa template",
+        "repo": "https://github.com/EqualMa/openfaas-koa-template",
+        "official": "false"
+    },
+    {
         "template": "node10-express-service",
         "platform": "x86_64",
         "language": "NodeJS",
