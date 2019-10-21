@@ -401,7 +401,7 @@
         "language": "Crystal",
         "source": "koffeinfrei",
         "description": "Crystal HTTP template",
-        "repo": "https://github.com/koffeinfrei/crystal-http-template<Paste>",
+        "repo": "https://github.com/koffeinfrei/crystal-http-template",
         "official": "false"
     }
 ]
