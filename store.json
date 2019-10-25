@@ -292,5 +292,14 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "template": "node12-koa-service",
+    "platform": "x86_64",
+    "language": "Node.js",
+    "source": "phumberdroz",
+    "description": "A Openfaas Service Node.js template using koa",
+    "repo": "https://github.com/phumberdroz/openfaas-node12-koa-service",
+    "official": "false"
   }
 ]
