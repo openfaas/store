@@ -292,5 +292,12 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "title": "Image EXIF Reader",
+    "description": "Reads EXIF information from an URL or base64 encoded image and returns JSON",
+    "image": "servernull/openfaas-exif:0.1.0",
+    "name": "openfaas-exif",
+    "repo_url": "https://github.com/servernull/openfaas-exif"
   }
 ]
