@@ -313,7 +313,7 @@
     "title": "Open NSFW Model",
     "description": "Score images for NSFW (nudity) content.",
     "image": "servernull/openfaas-opennsfw:0.1.0",
-    "name": "openfaas-opennsfw",
+    "name": "opennsfw",
     "repo_url": "https://github.com/servernull/openfaas-opennsfw"
   }
 ]
