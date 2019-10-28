@@ -3,17 +3,17 @@
     "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
     "title": "Colorization",
     "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
-    "image": "alexellis2/openfaas-colorization:0.4.0",
+    "image": "alexellis2/openfaas-colorization:0.4.1",
     "name": "colorise",
     "fprocess": "python -u index.py",
     "repo_url": "https://github.com/alexellis/repaint-the-past",
     "labels": {
-      "com.openfaas.ui.ext": "png"
+      "com.openfaas.ui.ext": "jpg"
     },
     "environment": {
       "url_mode": "true",
-      "read_timeout": "60",
-      "write_timeout": "60",
+      "read_timeout": "60s",
+      "write_timeout": "60s",
       "write_debug": "false"
     }
   },
@@ -24,9 +24,9 @@
     "name": "inception",
     "fprocess": "python3 index.py",
     "repo_url": "https://github.com/faas-and-furious/inception-function",
-    "environment": { 
-      "read_timeout": "60",
-      "write_timeout": "60"
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s"
     }
   },
   {
@@ -48,6 +48,38 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "title": "Face blur by Endre Simo",
+    "description": "Blur out faces detected in JPEGs. Invoke with the URL to the image.",
+    "image": "ofcommunity/teamserverless-pigo-openfaas-faceblur-pigo-openfaas-faceblur:0.1-master-7018614",
+    "name": "face-blur",
+    "repo_url": "https://github.com/esimov/pigo-openfaas-faceblur",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "input_mode": "url",
+      "output_mode": "image",
+      "content_type": "image/jpeg"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
+  },
+  {
+    "title": "SentimentAnalysis",
+    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+    "image": "functions/sentimentanalysis",
+    "envProcess": "python ./handler.py",
+    "name": "sentimentanalysis",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
+  },
+  {
+    "title": "Figlet",
+    "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
+    "image": "functions/figlet:0.13.0",
+    "name": "figlet",
+    "repo_url": "https://github.com/faas-and-furious/figlet",
+    "readOnlyRootFilesystem": true
+  },
+  {
     "title": "Face Detection with Pigo",
     "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
     "image": "esimov/pigo-openfaas:0.1",
@@ -63,27 +95,11 @@
     }
   },
   {
-    "title": "SentimentAnalysis",
-    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-    "image": "functions/sentimentanalysis",
-    "envProcess": "python ./handler.py",
-    "name": "sentimentanalysis",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-    },
-  {
-    "title": "Figlet",
-    "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
-    "image": "functions/figlet:0.13.0",
-    "name": "figlet",
-    "repo_url": "https://github.com/faas-and-furious/figlet",
-    "readOnlyRootFilesystem": true
-  },
-  {
-    "title": "Business Strategy Generator",
-    "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-    "image": "functions/business-strategy-generator:0.13.0",
-    "name": "business-strategy-generator",
-    "repo_url": "https://github.com/alexellis/strategy_generator",
+    "title": "curl",
+    "description": "Use curl for network diagnostics, pass the full command-line to the function",
+    "image": "alexellis/curl:0.1.1",
+    "name": "curl",
+    "repo_url": "https://github.com/alexellis/curl-function",
     "readOnlyRootFilesystem": true
   },
   {
@@ -130,9 +146,9 @@
     "image": "functions/nmap:0.13.0",
     "name": "nmap",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
-    "environment": { 
-      "read_timeout": "300",
-      "write_timeout": "300"
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
     }
   },
   {
@@ -148,15 +164,15 @@
     "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
     "title": "YouTube Video Downloader",
     "description": "Download YouTube videos as a function",
-    "image": "alexellis2/faas-youtubedl",
+    "image": "rgee0/faas-youtubedl",
     "name": "youtube-dl",
     "repo_url": "https://github.com/faas-and-furious/youtube-dl",
     "labels": {
       "com.openfaas.ui.ext": "mp4"
     },
-    "environment": { 
-      "read_timeout": "300",
-      "write_timeout": "300"
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
     }
   },
   {
@@ -169,9 +185,9 @@
     "labels": {
       "com.openfaas.ui.ext": "mp3"
     },
-    "environment": { 
-      "read_timeout": "60",
-      "write_timeout": "60"
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s"
     }
   },
   {
@@ -180,12 +196,12 @@
     "image": "jockdarock/nslookupfaas:master",
     "name": "nslookup",
     "repo_url": "https://github.com/jockdarock/nslookup_faas"
-  },  
+  },
   {
     "title": "Docker Image Manifest Query",
     "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
     "image": "rgee0/of-mquery:1.2",
-    "fprocess": "./mquery", 
+    "fprocess": "./mquery",
     "name": "mquery",
     "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
   },
@@ -213,6 +229,23 @@
     "readOnlyRootFilesystem": true
   },
   {
+    "title": "normalisecolor",
+    "icon": "https://github.com/alexellis/repaint-the-past/raw/master/normalise-color-icon.png",
+    "description": "Automatically fix white-balance in photos through imagemagick.",
+    "image": "alexellis2/normalisecolor:0.2.1",
+    "name": "normalisecolor",
+    "fprocess": "convert - -flatten +matte -separate -normalize -combine fd:1",
+    "repo_url": "https://github.com/alexellis/repaint-the-past",
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    },
+    "environment": {
+      "read_timeout": "60s",
+      "write_timeout": "60s",
+      "write_debug": "false"
+    }
+  },
+  {
     "title": "mememachine",
     "description": "Turn any image into a meme.",
     "image": "developius/faas-mememachine:0.2",
@@ -221,5 +254,52 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
+  },
+  {
+    "title": "Awesomify",
+    "description": "Make anyone or anything awesome! Pass in the name of a thing or person either in a POST body or a GET parameter named 'q'. The function will return an OGG/Opus audio file with your awesome thing awesomified. For best results use a singular name for your awesome thing. (SPOILER: The audio file contains the 'Everything is Awesome' track by Teegan and Sara mixed-up with your awesome thing.)",
+    "image": "diddledan/awesomify:0.1",
+    "name": "awesomify",
+    "repo_url": "https://github.com/diddledan/awesomify",
+    "environment": {
+      "content_type": "audio/ogg"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "ogg"
+    }
+  },
+  {
+    "title": "Business Strategy Generator",
+    "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
+    "image": "functions/business-strategy-generator:0.13.0",
+    "name": "business-strategy-generator",
+    "repo_url": "https://github.com/alexellis/strategy_generator",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "Line Drawing Generator from a photograph",
+    "description": "Automatically generates a sketch like image art based on the provided image",
+    "image": "esimov/colidr-openfaas:0.1",
+    "name": "coherent-line-drawing",
+    "repo_url": "https://github.com/esimov/openfaas-coherent-line-drawing",
+    "readOnlyRootFilesystem": true,
+    "environment": {
+      "input_mode": "url",
+      "output_mode": "image",
+      "content_type": "image/jpeg",
+      "write_timeout": "200s"
+    },
+    "labels": {
+      "com.openfaas.ui.ext": "jpg"
+    }
+  },
+  {
+    "template": "node12-koa-service",
+    "platform": "x86_64",
+    "language": "Node.js",
+    "source": "phumberdroz",
+    "description": "A Openfaas Service Node.js template using koa",
+    "repo": "https://github.com/phumberdroz/openfaas-node12-koa-service",
+    "official": "false"
   }
 ]

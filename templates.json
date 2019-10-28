@@ -18,6 +18,15 @@
         "official": "true"
     },
     {
+        "template": "dockerfile-armhf",
+        "platform": "armhf",
+        "language": "Dockerfile",
+        "source": "openfaas",
+        "description": "Official Dockerfile armhf template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "go-armhf",
         "platform": "armhf",
         "language": "Go",
@@ -123,23 +132,32 @@
         "source": "openfaas",
         "description": "Official Ruby 2.5 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "false"
+        "official": "true"
+    },
+    {
+        "template": "node10-express-arm64",
+        "platform": "arm64",
+        "language": "NodeJS",
+        "source": "openfaas-incubator",
+        "description": "Node.js 10 powered by express arm64 template",
+        "repo": "https://github.com/openfaas-incubator/node10-express-template",
+        "official": "true"
     },
     {
         "template": "node10-express-armhf",
         "platform": "armhf",
         "language": "NodeJS",
         "source": "openfaas-incubator",
-        "description": "NodeJS 10 Express armhf template",
+        "description": "Node.js 10 powered by express armhf template",
         "repo": "https://github.com/openfaas-incubator/node10-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node10-express",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas-incubator",
-        "description": "NodeJS 10 Express template",
+        "description": "Node.js 10 powered by express template",
         "repo": "https://github.com/openfaas-incubator/node10-express-template",
         "official": "true"
     },
@@ -150,7 +168,7 @@
         "source": "openfaas-incubator",
         "description": "Ruby 2.4 HTTP template",
         "repo": "https://github.com/openfaas-incubator/ruby-http",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python27-flask",
@@ -159,7 +177,7 @@
         "source": "openfaas-incubator",
         "description": "Python 2.7 Flask template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-flask-armhf",
@@ -168,7 +186,7 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Flask armhf template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-flask",
@@ -177,25 +195,43 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Flask template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
-        "official": "false"
+        "official": "true"
+    },
+    {
+        "template": "python3-http",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 with Flask and HTTP",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
+    },
+    {
+        "template": "python3-http-armhf",
+        "platform": "armhf",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 with Flask and HTTP for ARMHF",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
     },
     {
         "template": "node8-express-armhf",
         "platform": "armhf",
         "language": "NodeJS",
         "source": "openfaas-incubator",
-        "description": "NodeJS 8 Express armhf template",
+        "description": "Node.js 8 powered by express armhf template",
         "repo": "https://github.com/openfaas-incubator/node8-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "node8-express",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas-incubator",
-        "description": "NodeJS 8 Express template",
+        "description": "Node.js 8 powered by express template",
         "repo": "https://github.com/openfaas-incubator/node8-express-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-http-armhf",
@@ -204,7 +240,7 @@
         "source": "openfaas-incubator",
         "description": "Golang HTTP armhf template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-http",
@@ -213,7 +249,7 @@
         "source": "openfaas-incubator",
         "description": "Golang HTTP template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-middleware-armhf",
@@ -222,7 +258,7 @@
         "source": "openfaas-incubator",
         "description": "Golang Middleware armhf template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "golang-middleware",
@@ -231,7 +267,7 @@
         "source": "openfaas-incubator",
         "description": "Golang Middleware template",
         "repo": "https://github.com/openfaas-incubator/golang-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "python3-debian",
@@ -240,7 +276,7 @@
         "source": "openfaas-incubator",
         "description": "Python 3.6 Debian template",
         "repo": "https://github.com/openfaas-incubator/python3-debian",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "powershell-template",
@@ -249,7 +285,7 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "powershell-http-template",
@@ -258,7 +294,7 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core HTTP Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-http-template",
-        "official": "false"
+        "official": "true"
     },
     {
         "template": "rust",
@@ -266,7 +302,7 @@
         "language": "Rust",
         "source": "booyaa",
         "description": "Rust template",
-        "repo": "https://github.com/booyaa/openfaas-rust-template",
+        "repo": "https://github.com/openfaas-incubator/openfaas-rust-template",
         "official": "false"
     },
     {
@@ -339,6 +375,33 @@
         "source": "pmlopes",
         "description": "Quarkus.io native image template",
         "repo": "https://github.com/pmlopes/openfaas-quarkus-native-template",
+        "official": "false"
+    },
+    {
+        "template": "perl-alpine",
+        "platform": "x86_64",
+        "language": "Perl",
+        "source": "tmiklas",
+        "description": "Perl language template based on Alpine image",
+        "repo": "https://github.com/tmiklas/openfaas-perl-templates",
+        "official": "false"
+    },
+    {
+        "template": "node10-express-service",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas-incubator",
+        "description": "Node.js 10 express.js microservice template",
+        "repo": "https://github.com/openfaas-incubator/node10-express-service",
+        "official": "true"
+    },
+    {
+        "template": "crystal-http",
+        "platform": "x86_64",
+        "language": "Crystal",
+        "source": "koffeinfrei",
+        "description": "Crystal HTTP template",
+        "repo": "https://github.com/koffeinfrei/crystal-http-template",
         "official": "false"
     }
 ]
