@@ -294,6 +294,15 @@
     }
   },
   {
+    "template": "node12-koa-service",
+    "platform": "x86_64",
+    "language": "Node.js",
+    "source": "phumberdroz",
+    "description": "A Openfaas Service Node.js template using koa",
+    "repo": "https://github.com/phumberdroz/openfaas-node12-koa-service",
+    "official": "false"
+  },
+  {
     "title": "Image EXIF Reader",
     "description": "Reads EXIF information from an URL or base64 encoded image and returns JSON",
     "image": "servernull/openfaas-exif:0.1.0",
