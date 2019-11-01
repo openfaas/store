@@ -116,7 +116,7 @@ If you'd like to see your template in the official store follow these steps:
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas",
-        "description": "Official Golang template",
+        "description": "Classic Golang template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },

@@ -4,7 +4,7 @@
         "platform": "x86_64",
         "language": "C#",
         "source": "openfaas",
-        "description": "Official C# template",
+        "description": "Classic C# template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -13,7 +13,7 @@
         "platform": "x86_64",
         "language": "Dockerfile",
         "source": "openfaas",
-        "description": "Official Dockerfile template",
+        "description": "Classic Dockerfile template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -22,7 +22,7 @@
         "platform": "armhf",
         "language": "Dockerfile",
         "source": "openfaas",
-        "description": "Official Dockerfile armhf template",
+        "description": "Classic Dockerfile armhf template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -31,7 +31,7 @@
         "platform": "armhf",
         "language": "Go",
         "source": "openfaas",
-        "description": "Official Golang armhf template",
+        "description": "Classic Golang armhf template",
         "repo": "https://github.com/openfaas/templates.git",
         "official": "true"
     },
@@ -40,7 +40,7 @@
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas",
-        "description": "Official Golang template",
+        "description": "Classic Golang template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -49,7 +49,7 @@
         "platform": "x86_64",
         "language": "Java",
         "source": "openfaas",
-        "description": "Official Java 8 template",
+        "description": "Classic Java 8 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -58,7 +58,7 @@
         "platform": "arm64",
         "language": "NodeJS",
         "source": "openfaas",
-        "description": "Official NodeJS 8 arm64 template",
+        "description": "Classic NodeJS 8 arm64 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -67,7 +67,7 @@
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas",
-        "description": "Official NodeJS 8 template",
+        "description": "Classic NodeJS 8 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -76,7 +76,7 @@
         "platform": "armhf",
         "language": "NodeJS",
         "source": "openfaas",
-        "description": "Official NodeJS 8 armhf template",
+        "description": "Classic NodeJS 8 armhf template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -85,7 +85,7 @@
         "platform": "x86_64",
         "language": "PHP",
         "source": "openfaas",
-        "description": "Official PHP 7 template",
+        "description": "Classic PHP 7 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -94,7 +94,7 @@
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas",
-        "description": "Official Python 2.7 armhf template",
+        "description": "Classic Python 2.7 armhf template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -103,7 +103,7 @@
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas",
-        "description": "Official Python 2.7 template",
+        "description": "Classic Python 2.7 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -112,7 +112,7 @@
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas",
-        "description": "Official Python 3.6 armhf template",
+        "description": "Classic Python 3.6 armhf template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -121,7 +121,7 @@
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas",
-        "description": "Official Python 3.6 template",
+        "description": "Classic Python 3.6 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -130,7 +130,7 @@
         "platform": "x86_64",
         "language": "Ruby",
         "source": "openfaas",
-        "description": "Official Ruby 2.5 template",
+        "description": "Classic Ruby 2.5 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
