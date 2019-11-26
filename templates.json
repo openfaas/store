@@ -333,6 +333,15 @@
         "official": "false"
     },
     {
+	"template": "dart",
+	"platform": "x86_64",
+	"language": "Dart",
+	"source": "adaptant-labs",
+	"description": "Dart template",
+	"repo": "https://github.com/adaptant-labs/openfaas-dart-template",
+	"official": "false"
+    },
+    {
         "template": "vertx-native",
         "platform": "x86_64",
         "language": "Java",
