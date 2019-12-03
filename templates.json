@@ -421,5 +421,14 @@
         "description": "Crystal HTTP template",
         "repo": "https://github.com/koffeinfrei/crystal-http-template",
         "official": "false"
+    },
+    {
+        "template": "rust-http",
+        "platform": "x86_64",
+        "language": "Rust",
+        "source": "openfaas-incubator",
+        "description": "Rust HTTP template",
+        "repo": "https://github.com/openfaas-incubator/rust-http-template",
+        "official": "true"
     }
 ]
