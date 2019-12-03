@@ -333,6 +333,15 @@
         "official": "false"
     },
     {
+        "template": "csharp-kestrel",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "burtonr",
+        "description": "C# Kestrel HTTP template",
+        "repo": "https://github.com/burtonr/csharp-kestrel-template",
+        "official": "false"
+    },
+    {
         "template": "vertx-native",
         "platform": "x86_64",
         "language": "Java",
