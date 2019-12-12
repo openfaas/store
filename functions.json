@@ -358,6 +358,18 @@
         },
         "name": "openfaas-opennsfw",
         "repo_url": "https://github.com/servernull/openfaas-opennsfw"
+    },
+    {
+        "title": "Identicon Generator",
+        "description": "Create an identicon from a provided string value",
+        "images": {
+            "x86_64": "rgee0/identicon:1.0",
+            "armhf": "rgee0/identicon:1.0"
+        },
+        "icon": "https://raw.githubusercontent.com/rgee0/openfaas-identicon/master/sample/openfaas.png",
+        "name": "identicon",
+        "repo_url": "https://github.com/rgee0/openfaas-identicon",
+        "readOnlyRootFilesystem": true
     }
     ]
 }
