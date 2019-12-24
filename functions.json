@@ -41,7 +41,7 @@
         "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "images": {
             "armhf": "rgee0/certinfo:armhf",
-            "x86_64": "stefanprodan/certinfo"
+            "x86_64": "stefanprodan/certinfo:latest"
         },
         "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
     },
@@ -215,7 +215,7 @@
         "repo_url": "https://github.com/rorpage/openfaas-text-to-speech",
         "labels": {
             "com.openfaas.ui.ext": "mp3"
-        },
+          },
         "environment": {
             "read_timeout": "60s",
             "write_timeout": "60s"
