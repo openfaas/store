@@ -120,7 +120,7 @@
         "title": "SentimentAnalysis",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
         "images": {
-            "x86_64": "functions/sentimentanalysis"
+            "x86_64": "functions/sentimentanalysis:latest"
         },
         "envProcess": "python ./handler.py",
         "name": "sentimentanalysis",
@@ -141,7 +141,7 @@
         "title": "Dockerhub Stats",
         "description": "Golang function gives the count of repos a user has on the Docker hub",
         "images": {
-            "x86_64": "functions/hubstats"
+            "x86_64": "functions/hubstats:latest"
         },
         "name": "hubstats",
         "repo_url": "https://github.com/openfaas/faas",
@@ -190,8 +190,8 @@
         "title": "YouTube Video Downloader",
         "description": "Download YouTube videos as a function",
         "images": {
-            "armhf": "rgee0/faas-youtubedl",
-            "x86_64": "rgee0/faas-youtubedl"
+            "armhf": "rgee0/faas-youtubedl:latest",
+            "x86_64": "rgee0/faas-youtubedl:latest"
         },
         "name": "youtube-dl",
         "repo_url": "https://github.com/faas-and-furious/youtube-dl",
@@ -208,7 +208,7 @@
         "title": "OpenFaaS Text-to-Speech",
         "description": "Generate an MP3 of text using Google's Text-to-Speech",
         "images": {
-            "x86_64": "rorpage/text-to-speech",
+            "x86_64": "rorpage/text-to-speech:latest",
             "armhf": "rgee0/text-to-speech:armhf-latest"
         },
         "name": "text-to-speech",
@@ -282,7 +282,7 @@
         "description": "left-pad on OpenFaaS",
         "images": {
             "x86_64": "functions/faas-leftpad:0.2",
-            "armhf": "rgee0/faas-leftpad"
+            "armhf": "rgee0/faas-leftpad:latest"
         },
         "name": "leftpad",
         "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
