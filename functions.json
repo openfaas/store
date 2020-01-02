@@ -371,11 +371,11 @@
         "repo_url": "https://github.com/rgee0/openfaas-identicon",
         "readOnlyRootFilesystem": true,
         "environment": {
-		    "content_type": "image/jpeg",
+		    "content_type": "image/png",
 		    "write_timeout": "10s"
 		},
 	    "labels": {
-		    "com.openfaas.ui.ext": "jpg"
+		    "com.openfaas.ui.ext": "png"
 	    }
     }
     ]
