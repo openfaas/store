@@ -369,7 +369,14 @@
         "icon": "https://raw.githubusercontent.com/rgee0/openfaas-identicon/master/sample/openfaas.png",
         "name": "identicon",
         "repo_url": "https://github.com/rgee0/openfaas-identicon",
-        "readOnlyRootFilesystem": true
+        "readOnlyRootFilesystem": true,
+        "environment": {
+		    "content_type": "image/jpeg",
+		    "write_timeout": "10s"
+		},
+	    "labels": {
+		    "com.openfaas.ui.ext": "jpg"
+	    }
     }
     ]
 }
