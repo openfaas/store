@@ -190,9 +190,9 @@
         "title": "YouTube Video Downloader",
         "description": "Download YouTube videos as a function",
         "images": {
-            "armhf": "jcowey/youtubedl:latest",
-            "x86_64": "jcowey/youtubedl:latest",
-            "arm64": "jcowey/youtubedl:latest"
+            "armhf": "jcowey/youtube-dl:latest",
+            "x86_64": "jcowey/youtube-dl:latest",
+            "arm64": "jcowey/youtube-dl:latest"
         },
         "name": "youtube-dl",
         "repo_url": "https://github.com/hijak/youtube-dl",

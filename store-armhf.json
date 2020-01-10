@@ -64,7 +64,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/YouTube_social_white_squircle_%282017%29.svg/600px-YouTube_social_white_squircle_%282017%29.svg.png",
     "title": "YouTube Video Downloader",
     "description": "Download YouTube videos as a function",
-    "image": "jcowey/youtubedl",
+    "image": "jcowey/youtube-dl",
     "name": "youtube-dl",
     "repo_url": "https://github.com/hijak/youtube-dl",
     "labels": {
