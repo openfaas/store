@@ -14,5 +14,20 @@
     "name": "sha512sum",
     "fprocess": "sha512sum",
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
+  },
+  {
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/YouTube_social_white_squircle_%282017%29.svg/600px-YouTube_social_white_squircle_%282017%29.svg.png",
+    "title": "YouTube Video Downloader",
+    "description": "Download YouTube videos as a function",
+    "image": "jcowey/youtubedl",
+    "name": "youtube-dl",
+    "repo_url": "https://github.com/hijak/youtube-dl",
+    "labels": {
+      "com.openfaas.ui.ext": "mp4"
+    },
+    "environment": {
+      "read_timeout": "300s",
+      "write_timeout": "300s"
+    }
   }
 ]

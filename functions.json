@@ -186,15 +186,16 @@
         "readOnlyRootFilesystem": true
     },
     {
-        "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/YouTube_social_white_squircle_%282017%29.svg/600px-YouTube_social_white_squircle_%282017%29.svg.png",
         "title": "YouTube Video Downloader",
         "description": "Download YouTube videos as a function",
         "images": {
-            "armhf": "rgee0/faas-youtubedl:latest",
-            "x86_64": "rgee0/faas-youtubedl:latest"
+            "armhf": "jcowey/youtubedl:latest",
+            "x86_64": "jcowey/youtubedl:latest",
+            "arm64": "jcowey/youtubedl:latest"
         },
         "name": "youtube-dl",
-        "repo_url": "https://github.com/faas-and-furious/youtube-dl",
+        "repo_url": "https://github.com/hijak/youtube-dl",
         "labels": {
             "com.openfaas.ui.ext": "mp4"
         },
