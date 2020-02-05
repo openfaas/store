@@ -282,9 +282,9 @@
         "template": "python3-debian",
         "platform": "x86_64",
         "language": "Python",
-        "source": "openfaas-incubator",
-        "description": "Python 3.6 Debian template",
-        "repo": "https://github.com/openfaas-incubator/python3-debian",
+        "source": "openfaas",
+        "description": "Python 3 Debian template",
+        "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
     {
