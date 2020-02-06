@@ -430,5 +430,14 @@
         "description": "Rust HTTP template",
         "repo": "https://github.com/openfaas-incubator/rust-http-template",
         "official": "true"
+    },
+    {
+        "template": "bash-streaming",
+        "platform": "x86_64",
+        "language": "Bash",
+        "source": "openfaas-incubator",
+        "description": "Bash Streaming template",
+        "repo": "https://github.com/alexellis/openfaas-streaming-templates",
+        "official": "true"
     }
 ]
