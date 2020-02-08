@@ -410,7 +410,7 @@
         "language": "NodeJS",
         "source": "openfaas-incubator",
         "description": "Node.js 10 express.js microservice template",
-        "repo": "https://github.com/openfaas-incubator/node10-express-service",
+        "repo": "https://github.com/openfaas-incubator/node10-express-template",
         "official": "true"
     },
     {
