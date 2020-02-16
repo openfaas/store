@@ -1,357 +1,394 @@
-{ 
-   "version":"0.2.0",
-   "functions":[ 
-      { 
-         "title":"NodeInfo",
-         "name":"nodeinfo",
-         "description":"Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
-         "images":{ 
-            "arm64":"functions/nodeinfo:arm64",
-            "armhf":"functions/nodeinfo:latest-armhf",
-            "x86_64":"functions/nodeinfo:latest"
-         },
-         "fprocess":"node main.js",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
-      },
-      { 
-         "title":"sha512sum",
-         "name":"sha512sum",
-         "description":"Generate shasums in 512 format",
-         "images":{ 
-            "arm64":"functions/alpine:latest-arm64"
-         },
-         "fprocess":"sha512sum",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
-      },
-      { 
-         "title":"Figlet",
-         "name":"figlet",
-         "description":"Generate ASCII logos with the figlet CLI",
-         "images":{ 
-            "armhf":"functions/figlet:latest-armhf",
-            "x86_64":"functions/figlet:0.13.0"
-         },
-         "fprocess":"figlet",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
-      },
-      { 
-         "title":"SSL/TLS cert info",
-         "name":"certinfo",
-         "description":"Returns SSL/TLS certificate information for a given URL",
-         "icon":"https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
-         "images":{ 
-            "armhf":"rgee0/certinfo:armhf",
-            "x86_64":"stefanprodan/certinfo"
-         },
-         "repo_url":"https://github.com/stefanprodan/openfaas-certinfo"
-      },
-      { 
-         "title":"Colorization",
-         "name":"colorise",
-         "description":"Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
-         "icon":"https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
-         "images":{ 
-            "x86_64":"alexellis2/openfaas-colorization:0.4.1"
-         },
-         "fprocess":"python -u index.py",
-         "repo_url":"https://github.com/alexellis/repaint-the-past",
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         },
-         "environment":{ 
-            "url_mode":"true",
-            "read_timeout":"60s",
-            "write_timeout":"60s",
-            "write_debug":"false"
-         }
-      },
-      { 
-         "title":"Inception",
-         "name":"inception",
-         "description":"This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
-         "images":{ 
-            "x86_64":"alexellis/inception:2019-02-17"
-         },
-         "fprocess":"python3 index.py",
-         "repo_url":"https://github.com/faas-and-furious/inception-function",
-         "environment":{ 
-            "read_timeout":"60s",
-            "write_timeout":"60s"
-         }
-      },
-      { 
-         "title":"Have I Been Pwned",
-         "icon":"https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
-         "description":"The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
-         "images":{ 
-            "x86_64":"functions/haveibeenpwned:0.13.0"
-         },
-         "name":"haveibeenpwned",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
-         "readOnlyRootFilesystem":true
-      },
-      { 
-         "title":"Face Detection with Pigo",
-         "description":"Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
-         "images":{ 
-            "x86_64":"esimov/pigo-openfaas:0.1"
-         },
-         "name":"face-detect-pigo",
-         "repo_url":"https://github.com/esimov/pigo-openfaas",
-         "readOnlyRootFilesystem":true,
-         "environment":{ 
-            "output_mode":"image",
-            "input_mode":"url"
-         },
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         }
-      },
-      { 
-         "title":"curl",
-         "description":"Use curl for network diagnostics, pass the full command-line to the function",
-         "images":{ 
-            "x86_64":"alexellis/curl:0.1.1"
-         },
-         "name":"curl",
-         "repo_url":"https://github.com/alexellis/curl-function"
-      },
-      { 
-         "title":"SentimentAnalysis",
-         "description":"Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-         "images":{ 
-            "x86_64":"functions/sentimentanalysis"
-         },
-         "envProcess":"python ./handler.py",
-         "name":"sentimentanalysis",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-      },
-      { 
-         "icon":"https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
-         "title":"Tesseract OCR",
-         "description":"This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
-         "images":{ 
-            "x86_64":"viveksyngh/openfaas-ocr:0.3.0"
-         },
-         "name":"ocr",
-         "repo_url":"https://github.com/viveksyngh/openfaas-ocr"
-      },
-      { 
-         "icon":"https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
-         "title":"Dockerhub Stats",
-         "description":"Golang function gives the count of repos a user has on the Docker hub",
-         "images":{ 
-            "x86_64":"functions/hubstats"
-         },
-         "name":"hubstats",
-         "repo_url":"https://github.com/openfaas/faas",
-         "readOnlyRootFilesystem":true
-      },
-      { 
-         "icon":"https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
-         "title":"QR Code Generator - Go",
-         "description":"QR Code generator using Go",
-         "images":{ 
-            "x86_64":"alexellis/qrcode:0.1"
-         },
-         "name":"qrcode-go",
-         "repo_url":"https://github.com/faas-and-furious/qrcode",
-         "labels":{ 
-            "com.openfaas.ui.ext":"png"
-         }
-      },
-      { 
-         "icon":"https://nmap.org/images/nmap-logo-256x256.png",
-         "title":"Nmap Security Scanner",
-         "description":"Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
-         "images":{ 
-            "x86_64":"functions/nmap:0.13.0"
-         },
-         "name":"nmap",
-         "repo_url":"https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
-         "environment":{ 
-            "read_timeout":"300s",
-            "write_timeout":"300s"
-         }
-      },
-      { 
-         "title":"ASCII Cows",
-         "description":"Generate cartoons of ASCII cows",
-         "images":{ 
-            "x86_64":"alexellis2/ascii-cows-openfaas:0.1"
-         },
-         "name":"cows",
-         "fprocess":"node show_cow.js",
-         "repo_url":"https://github.com/alexellis/cows-docker",
-         "readOnlyRootFilesystem":true
-      },
-      { 
-         "icon":"https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
-         "title":"YouTube Video Downloader",
-         "description":"Download YouTube videos as a function",
-         "images":{ 
-            "armhf":"rgee0/faas-youtubedl",
-            "x86_64":"rgee0/faas-youtubedl"
-         },
-         "name":"youtube-dl",
-         "repo_url":"https://github.com/faas-and-furious/youtube-dl",
-         "labels":{ 
-            "com.openfaas.ui.ext":"mp4"
-         },
-         "environment":{ 
-            "read_timeout":"300s",
-            "write_timeout":"300s"
-         }
-      },
-      { 
-         "icon":"https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
-         "title":"OpenFaaS Text-to-Speech",
-         "description":"Generate an MP3 of text using Google's Text-to-Speech",
-         "images":{ 
-            "x86_64":"rorpage/text-to-speech",
-            "armhf":"rgee0/text-to-speech:armhf-latest"
-         },
-         "name":"text-to-speech",
-         "repo_url":"https://github.com/rorpage/openfaas-text-to-speech",
-         "labels":{ 
-            "com.openfaas.ui.ext":"mp3"
-         },
-         "environment":{ 
-            "read_timeout":"60s",
-            "write_timeout":"60s"
-         }
-      },
-      { 
-         "title":"nslookup",
-         "description":"Uses nslookup to return any IP address info on domains and URLs",
-         "images":{ 
-            "x86_64":"jockdarock/nslookupfaas:master",
-            "armhf":"jockdarock/nslookup-arm-faas:latest-armhf"
-         },
-         "name":"nslookup",
-         "repo_url":"https://github.com/jockdarock/nslookup_faas"
-      },
-      { 
-         "title":"Docker Image Manifest Query",
-         "description":"Query an image on the Docker Hub for supported architectures - by Phil Estes",
-         "images":{ 
-            "x86_64":"rgee0/of-mquery:1.2",
-            "armhf":"rgee0/of-mquery:1.2"
-         },
-         "fprocess":"./mquery",
-         "name":"mquery",
-         "repo_url":"https://github.com/rgee0/mquery/tree/openfaaschanges"
-      },
-      { 
-         "title":"face-detect with OpenCV",
-         "description":"Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
-         "images":{ 
-            "x86_64":"alexellis2/facedetect:0.1"
-         },
-         "name":"face-detect-opencv",
-         "repo_url":"https://github.com/alexellis/facedetect-openfaas",
-         "readOnlyRootFilesystem":true,
-         "environment":{ 
-            "output_mode":"image",
-            "input_mode":"url"
-         },
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         }
-      },
-      { 
-         "title":"Face blur by Endre Simo",
-         "description":"Blur out faces detected in JPEGs. Invoke with the URL to the image.",
-         "images":{ 
-            "x86_64":"ofcommunity/teamserverless-pigo-openfaas-faceblur-pigo-openfaas-faceblur:0.1-master-7018614"
-         },
-         "name":"face-blur",
-         "repo_url":"https://github.com/esimov/pigo-openfaas-faceblur",
-         "readOnlyRootFilesystem":true,
-         "environment":{ 
-            "output_mode":"image",
-            "input_mode":"url",
-            "content_type":"image/jpeg"
-         },
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         }
-      },
-      { 
-         "title":"Left-Pad",
-         "description":"left-pad on OpenFaaS",
-         "images":{ 
-            "x86_64":"functions/faas-leftpad:0.2",
-            "armhf":"rgee0/faas-leftpad"
-         },
-         "name":"leftpad",
-         "repo_url":"https://github.com/faas-and-furious/faas-leftpad",
-         "readOnlyRootFilesystem":true
-      },
-      { 
-         "title":"normalisecolor",
-         "description":"Automatically fix white-balance in photos through imagemagick.",
-         "images":{ 
-            "x86_64":"alexellis2/normalisecolor:0.2.1"
-         },
-         "icon":"https://github.com/alexellis/repaint-the-past/raw/master/normalise-color-icon.png",
-         "name":"normalisecolor",
-         "repo_url":"https://github.com/alexellis/repaint-the-past",
-         "readOnlyRootFilesystem":false
-      },
-      { 
-         "title":"mememachine",
-         "description":"Turn any image into a meme.",
-         "images":{ 
-            "x86_64":"developius/faas-mememachine:0.2"
-         },
-         "name":"mememachine",
-         "repo_url":"https://github.com/developius/openfaas-mememachine",
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         }
-      },
-      { 
-         "title":"Business Strategy Generator",
-         "description":"Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-         "images":{ 
-            "x86_64":"functions/business-strategy-generator:0.13.0"
-         },
-         "name":"business-strategy-generator",
-         "repo_url":"https://github.com/alexellis/strategy_generator",
-         "readOnlyRootFilesystem":true,
-         "platform":"x86_64"
-      },
-      { 
-         "title":"Line Drawing Generator from a photograph",
-         "description":"Automatically generates a sketch like image art based on the provided image",
-         "images":{ 
-            "x86_64":"esimov/colidr-openfaas:0.1"
-         },
-         "name":"coherent-line-drawing",
-         "repo_url":"https://github.com/esimov/openfaas-coherent-line-drawing",
-         "readOnlyRootFilesystem":true,
-         "environment":{ 
-            "input_mode":"url",
-            "output_mode":"image",
-            "content_type":"image/jpeg",
-            "write_timeout":"300s"
-         },
-         "labels":{ 
-            "com.openfaas.ui.ext":"jpg"
-         }
-      },
-      { 
-         "title":"LSB Steganography",
-         "description":"LSB steganography encoding/decoding on base64 images",
-         "images":{ 
-            "x86_64":"auyer/fn-steganography"
-         },
-         "name":"steganography",
-         "repo_url":"https://github.com/auyer/fn-steganography",
-         "labels":{ 
-            "com.openfaas.ui.ext":"json"
-         }
-      }
-   ]
+{
+    "version": "0.2.0",
+    "functions": [
+    {
+        "title": "NodeInfo",
+        "name": "nodeinfo",
+        "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+        "images": {
+            "arm64": "functions/nodeinfo:arm64",
+            "armhf": "functions/nodeinfo:latest-armhf",
+            "x86_64": "functions/nodeinfo:latest"
+        },
+        "fprocess": "node main.js",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+    },
+    {
+        "title": "sha512sum",
+        "name": "sha512sum",
+        "description": "Generate shasums in 512 format",
+        "images": {
+            "arm64": "functions/alpine:latest-arm64"
+        },
+        "fprocess": "sha512sum",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
+    },
+    {
+        "title": "Figlet",
+        "name": "figlet",
+        "description": "Generate ASCII logos with the figlet CLI",
+        "images": {
+            "armhf": "functions/figlet:latest-armhf",
+            "x86_64": "functions/figlet:0.13.0"
+        },
+        "fprocess": "figlet",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
+    },
+    {
+        "title": "SSL/TLS cert info",
+        "name": "certinfo",
+        "description": "Returns SSL/TLS certificate information for a given URL",
+        "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
+        "images": {
+            "armhf": "rgee0/certinfo:armhf",
+            "x86_64": "stefanprodan/certinfo:latest"
+        },
+        "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+    },
+    {
+        "title": "Colorization",
+        "name": "colorise",
+        "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
+        "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
+        "images": {
+            "x86_64": "alexellis2/openfaas-colorization:0.4.1"
+        },
+        "fprocess": "python -u index.py",
+        "repo_url": "https://github.com/alexellis/repaint-the-past",
+        "labels": {
+            "com.openfaas.ui.ext": "jpg"
+        },
+        "environment": {
+            "url_mode": "true",
+            "read_timeout": "60s",
+            "write_timeout": "60s",
+            "write_debug": "false"
+        }
+    },
+    {
+        "title": "Inception",
+        "name": "inception",
+        "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
+        "images": {
+            "x86_64": "alexellis/inception:2019-02-17"
+        },
+        "fprocess": "python3 index.py",
+        "repo_url": "https://github.com/faas-and-furious/inception-function",
+        "environment": {
+            "read_timeout": "60s",
+            "write_timeout": "60s"
+        }
+    },
+    {
+        "title": "Have I Been Pwned",
+        "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
+        "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
+        "images": {
+            "x86_64": "functions/haveibeenpwned:0.13.0"
+        },
+        "name": "haveibeenpwned",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
+        "readOnlyRootFilesystem": true
+    },
+    {
+        "title": "Face Detection with Pigo",
+        "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
+        "images": {
+            "x86_64": "esimov/pigo-openfaas:0.1"
+        },
+        "name": "face-detect-pigo",
+        "repo_url": "https://github.com/esimov/pigo-openfaas",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "output_mode": "image",
+            "input_mode": "url"
+        },
+        "labels": {
+            "com.openfaas.ui.ext": "jpg"
+        }
+    },
+    {
+        "title": "curl",
+        "description": "Use curl for network diagnostics, pass the full command-line to the function",
+        "images": {
+            "x86_64": "alexellis/curl:0.1.1"
+        },
+        "name": "curl",
+        "repo_url": "https://github.com/alexellis/curl-function"
+    },
+    {
+        "title": "SentimentAnalysis",
+        "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+        "images": {
+            "x86_64": "functions/sentimentanalysis:latest"
+        },
+        "envProcess": "python ./handler.py",
+        "name": "sentimentanalysis",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
+    },
+    {
+        "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
+        "title": "Tesseract OCR",
+        "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
+        "images": {
+            "x86_64": "viveksyngh/openfaas-ocr:0.3.0"
+        },
+        "name": "ocr",
+        "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
+    },
+    {
+        "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
+        "title": "Dockerhub Stats",
+        "description": "Golang function gives the count of repos a user has on the Docker hub",
+        "images": {
+            "x86_64": "functions/hubstats:latest"
+        },
+        "name": "hubstats",
+        "repo_url": "https://github.com/openfaas/faas",
+        "readOnlyRootFilesystem": true
+    },
+    {
+        "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
+        "title": "QR Code Generator - Go",
+        "description": "QR Code generator using Go",
+        "images": {
+            "x86_64": "alexellis/qrcode:0.1"
+        },
+        "name": "qrcode-go",
+        "repo_url": "https://github.com/faas-and-furious/qrcode",
+        "labels": {
+            "com.openfaas.ui.ext": "png"
+        }
+    },
+    {
+        "icon": "https://nmap.org/images/nmap-logo-256x256.png",
+        "title": "Nmap Security Scanner",
+        "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
+        "images": {
+            "x86_64": "functions/nmap:0.13.0"
+        },
+        "name": "nmap",
+        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
+        "environment": {
+            "read_timeout": "300s",
+            "write_timeout": "300s"
+        }
+    },
+    {
+        "title": "ASCII Cows",
+        "description": "Generate cartoons of ASCII cows",
+        "images": {
+            "x86_64": "alexellis2/ascii-cows-openfaas:0.1"
+        },
+        "name": "cows",
+        "fprocess": "node show_cow.js",
+        "repo_url": "https://github.com/alexellis/cows-docker",
+        "readOnlyRootFilesystem": true
+    },
+    {
+        "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
+        "title": "YouTube Video Downloader",
+        "description": "Download YouTube videos as a function",
+        "images": {
+            "armhf": "rgee0/faas-youtubedl:latest",
+            "x86_64": "rgee0/faas-youtubedl:latest"
+        },
+        "name": "youtube-dl",
+        "repo_url": "https://github.com/faas-and-furious/youtube-dl",
+        "labels": {
+            "com.openfaas.ui.ext": "mp4"
+        },
+        "environment": {
+            "read_timeout": "300s",
+            "write_timeout": "300s"
+        }
+    },
+    {
+        "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
+        "title": "OpenFaaS Text-to-Speech",
+        "description": "Generate an MP3 of text using Google's Text-to-Speech",
+        "images": {
+            "x86_64": "rorpage/text-to-speech:latest",
+            "armhf": "rgee0/text-to-speech:armhf-latest"
+        },
+        "name": "text-to-speech",
+        "repo_url": "https://github.com/rorpage/openfaas-text-to-speech",
+        "labels": {
+            "com.openfaas.ui.ext": "mp3"
+          },
+        "environment": {
+            "read_timeout": "60s",
+            "write_timeout": "60s"
+        }
+    },
+    {
+        "title": "nslookup",
+        "description": "Uses nslookup to return any IP address info on domains and URLs",
+        "images": {
+            "x86_64": "jockdarock/nslookupfaas:master",
+            "armhf": "jockdarock/nslookup-arm-faas:latest-armhf"
+        },
+        "name": "nslookup",
+        "repo_url": "https://github.com/jockdarock/nslookup_faas"
+    },
+    {
+        "title": "Docker Image Manifest Query",
+        "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
+        "images": {
+            "x86_64": "rgee0/of-mquery:1.2",
+            "armhf": "rgee0/of-mquery:1.2"
+        },
+        "fprocess": "./mquery",
+        "name": "mquery",
+        "repo_url": "https://github.com/rgee0/mquery/tree/openfaaschanges"
+    },
+    {
+        "title": "face-detect with OpenCV",
+        "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
+        "images": {
+            "x86_64": "alexellis2/facedetect:0.1"
+        },
+        "name": "face-detect-opencv",
+        "repo_url": "https://github.com/alexellis/facedetect-openfaas",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "output_mode": "image",
+            "input_mode": "url"
+        },
+        "labels": {
+            "com.openfaas.ui.ext": "jpg"
+        }
+    },
+    {
+        "title": "Face blur by Endre Simo",
+        "description": "Blur out faces detected in JPEGs. Invoke with the URL to the image.",
+        "images": {
+            "x86_64": "ofcommunity/teamserverless-pigo-openfaas-faceblur-pigo-openfaas-faceblur:0.1-master-7018614"
+        },
+        "name": "face-blur",
+        "repo_url": "https://github.com/esimov/pigo-openfaas-faceblur",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "output_mode": "image",
+            "input_mode": "url",
+            "content_type": "image/jpeg"
+        },
+        "labels": {
+            "com.openfaas.ui.ext": "jpg"
+        }
+    },
+    {
+        "title": "Left-Pad",
+        "description": "left-pad on OpenFaaS",
+        "images": {
+            "x86_64": "functions/faas-leftpad:0.2",
+            "armhf": "rgee0/faas-leftpad:latest"
+        },
+        "name": "leftpad",
+        "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
+        "readOnlyRootFilesystem": true
+    },
+    {
+        "title": "normalisecolor",
+        "description": "Automatically fix white-balance in photos through imagemagick.",
+        "images": {
+            "x86_64": "alexellis2/normalisecolor:0.2.1"
+        },
+        "icon": "https://github.com/alexellis/repaint-the-past/raw/master/normalise-color-icon.png",
+        "name": "normalisecolor",
+        "repo_url": "https://github.com/alexellis/repaint-the-past",
+        "readOnlyRootFilesystem": false
+    },
+    {
+        "title": "mememachine",
+        "description": "Turn any image into a meme.",
+        "images": {
+            "x86_64": "developius/faas-mememachine:0.2"
+        },
+        "name": "mememachine",
+        "repo_url": "https://github.com/developius/openfaas-mememachine",
+        "labels": {
+            "com.openfaas.ui.ext": "jpg"
+        }
+    },
+    {
+        "title": "Business Strategy Generator",
+        "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
+        "images": {
+            "x86_64": "functions/business-strategy-generator:0.13.0"
+        },
+        "name": "business-strategy-generator",
+        "repo_url": "https://github.com/alexellis/strategy_generator",
+        "readOnlyRootFilesystem": true,
+        "platform": "x86_64"
+    },
+    {
+        "title": "Line Drawing Generator from a photograph",
+        "description": "Automatically generates a sketch like image art based on the provided image",
+        "images": {
+            "x86_64": "esimov/colidr-openfaas:0.1"
+        },
+        "name": "coherent-line-drawing",
+        "repo_url": "https://github.com/esimov/openfaas-coherent-line-drawing",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+		    "input_mode": "url",
+		    "output_mode": "image",
+		    "content_type": "image/jpeg",
+		    "write_timeout": "300s"
+		},
+	    "labels": {
+		    "com.openfaas.ui.ext": "jpg"
+	    }
+    },
+    {
+        "title": "Image EXIF Reader",
+        "description": "Reads EXIF information from an URL or base64 encoded image and returns JSON",
+        "images": {
+            "x86_64": "servernull/openfaas-exif:0.1.0"
+        },
+        "name": "openfaas-exif",
+        "repo_url": "https://github.com/servernull/openfaas-exif"
+    },
+    {
+        "title": "Open NSFW Model",
+        "description": "Score images for NSFW (nudity) content.",
+        "images": {
+            "x86_64": "servernull/openfaas-opennsfw:0.1.0"
+        },
+        "name": "openfaas-opennsfw",
+        "repo_url": "https://github.com/servernull/openfaas-opennsfw"
+    },
+    {
+        "title": "Identicon Generator",
+        "description": "Create an identicon from a provided string value",
+        "images": {
+            "x86_64": "rgee0/identicon:1.0",
+            "armhf": "rgee0/identicon:1.0"
+        },
+        "icon": "https://raw.githubusercontent.com/rgee0/openfaas-identicon/master/sample/openfaas.png",
+        "name": "identicon",
+        "repo_url": "https://github.com/rgee0/openfaas-identicon",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+		    "content_type": "image/png",
+		    "write_timeout": "10s"
+		},
+	    "labels": {
+		    "com.openfaas.ui.ext": "png"
+	    }
+    },
+    { 
+        "title":"LSB Steganography",
+        "description":"LSB steganography encoding/decoding on base64 images",
+        "images":{ 
+           "x86_64":"auyer/fn-steganography"
+        },
+        "name":"steganography",
+        "repo_url":"https://github.com/auyer/fn-steganography",
+        "labels":{ 
+           "com.openfaas.ui.ext":"json"
+        }
+     }
+    ]
 }

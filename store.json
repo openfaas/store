@@ -301,5 +301,19 @@
     "description": "A Openfaas Service Node.js template using koa",
     "repo": "https://github.com/phumberdroz/openfaas-node12-koa-service",
     "official": "false"
+  },
+  {
+    "title": "Image EXIF Reader",
+    "description": "Reads EXIF information from an URL or base64 encoded image and returns JSON",
+    "image": "servernull/openfaas-exif:0.1.0",
+    "name": "exif",
+    "repo_url": "https://github.com/servernull/openfaas-exif"
+  },
+  {
+    "title": "Open NSFW Model",
+    "description": "Score images for NSFW (nudity) content.",
+    "image": "servernull/openfaas-opennsfw:0.1.0",
+    "name": "opennsfw",
+    "repo_url": "https://github.com/servernull/openfaas-opennsfw"
   }
 ]
