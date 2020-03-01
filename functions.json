@@ -7,10 +7,9 @@
         "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
         "images": {
             "arm64": "functions/nodeinfo:arm64",
-            "armhf": "functions/nodeinfo:latest-armhf",
-            "x86_64": "functions/nodeinfo:latest"
+            "armhf": "functions/nodeinfo-http:latest-armhf",
+            "x86_64": "functions/nodeinfo-http:latest"
         },
-        "fprocess": "node main.js",
         "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
     },
     {
