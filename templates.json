@@ -207,6 +207,15 @@
         "official": "true"
     },
     {
+        "template": "python3-flask-debian",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 Flask template based on Debian",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
+    },
+    {
         "template": "python3-http",
         "platform": "x86_64",
         "language": "Python",
@@ -221,6 +230,15 @@
         "language": "Python",
         "source": "openfaas-incubator",
         "description": "Python 3.6 with Flask and HTTP for ARMHF",
+        "repo": "https://github.com/openfaas-incubator/python-flask-template",
+        "official": "true"
+    },
+    {
+        "template": "python3-http-debian",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Python 3.6 with Flask and HTTP based on Debian",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
         "official": "true"
     },
