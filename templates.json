@@ -193,7 +193,7 @@
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas-incubator",
-        "description": "Python 3.7 Flask armhf template",
+        "description": "Python 3.6 Flask armhf template",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
         "official": "true"
     },
@@ -229,7 +229,7 @@
         "platform": "armhf",
         "language": "Python",
         "source": "openfaas-incubator",
-        "description": "Python 3.7 with Flask and HTTP for ARMHF",
+        "description": "Python 3.6 with Flask and HTTP for ARMHF",
         "repo": "https://github.com/openfaas-incubator/python-flask-template",
         "official": "true"
     },
