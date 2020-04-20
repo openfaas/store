@@ -49,7 +49,25 @@
         "platform": "x86_64",
         "language": "Java",
         "source": "openfaas",
-        "description": "Classic Java 8 template",
+        "description": "Java 8 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "java11",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "openfaas",
+        "description": "Java 11 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "java11-vert-x",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "openfaas",
+        "description": "Java 11 Vert.x template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
