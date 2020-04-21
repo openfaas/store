@@ -475,5 +475,14 @@
         "description": "Bash Streaming template",
         "repo": "https://github.com/alexellis/openfaas-streaming-templates",
         "official": "true"
+    },
+    {
+        "template": "cobol",
+        "platform": "x86_64",
+        "language": "COBOL",
+        "source": "devries",
+        "description": "COBOL Template",
+        "repo": "https://github.com/devries/openfaas-cobol-template",
+        "official": "false"
     }
 ]
