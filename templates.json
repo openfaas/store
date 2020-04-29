@@ -72,11 +72,11 @@
         "official": "true"
     },
     {
-        "template": "node-arm64",
-        "platform": "arm64",
+        "template": "node12",
+        "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas",
-        "description": "Classic NodeJS 8 arm64 template",
+        "description": "HTTP-based Node 12 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -95,6 +95,15 @@
         "language": "NodeJS",
         "source": "openfaas",
         "description": "Classic NodeJS 8 armhf template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "node-arm64",
+        "platform": "arm64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "Classic NodeJS 8 arm64 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
