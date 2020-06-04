@@ -9,6 +9,15 @@
         "official": "true"
     },
     {
+      "template": "deno-http",
+      "platform": "x86_64",
+      "language": "TypeScript",
+      "source": "openfaas",
+      "description": "HTTP-based Deno template",
+      "repo": "https://github.com/austinrivas/deno-http-template",
+      "official": "false"
+    },
+    {
         "template": "dockerfile",
         "platform": "x86_64",
         "language": "Dockerfile",
