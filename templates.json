@@ -493,5 +493,32 @@
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
         "official": "false"
+    },
+    {
+        "template": "node-multiarch",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "MrSimonEmms",
+        "description": "NodeJS Template with TypeScript support for x86_64",
+        "repo": "https://gitlab.com/MrSimonEmms/openfaas-templates",
+        "official": "false"
+    },
+    {
+        "template": "node-multiarch",
+        "platform": "armhf",
+        "language": "NodeJS",
+        "source": "MrSimonEmms",
+        "description": "NodeJS Template with TypeScript support for ARMHF",
+        "repo": "https://gitlab.com/MrSimonEmms/openfaas-templates",
+        "official": "false"
+    },
+    {
+        "template": "node-multiarch",
+        "platform": "arm64",
+        "language": "NodeJS",
+        "source": "MrSimonEmms",
+        "description": "NodeJS Template with TypeScript support for ARM64",
+        "repo": "https://gitlab.com/MrSimonEmms/openfaas-templates",
+        "official": "false"
     }
 ]
