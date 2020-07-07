@@ -207,6 +207,15 @@
         "official": "true"
     },
     {
+        "template": "ruby-http-json",
+        "platform": "x86_64",
+        "language": "Ruby",
+        "source": "buck-ai",
+        "description": "Ruby 2.7.1 JSON HTTP template",
+        "repo": "https://github.com/buck-ai/openfaas-templates",
+        "official": "false"
+    },
+    {
         "template": "python27-flask",
         "platform": "x86_64",
         "language": "Python",
