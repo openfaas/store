@@ -493,5 +493,14 @@
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
         "official": "false"
+    },
+    {
+        "template": "csharp-http",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "redpandaltd",
+        "description": "C# Http Template",
+        "repo": "https://github.com/redpandaltd/openfaas-csharp-http-template",
+        "official": "false"
     }
 ]
