@@ -8,6 +8,14 @@
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
   },
   {
+    "title": "Figlet",
+    "description": "Generate ASCII logos with the figlet CLI",
+    "image": "oswalpalash/figlet:arm64",
+    "name": "figlet",
+    "fprocess": "figlet",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
+  },
+  {
     "title": "sha512sum",
     "description": "Generate shasums in 512 format",
     "image": "functions/alpine:latest-arm64",
