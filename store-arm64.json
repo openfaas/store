@@ -16,6 +16,14 @@
     "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
   },
   {
+    "title": "SentimentAnalysis",
+    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+    "image": "oswalpalash/sentimentanalysis:arm64",
+    "envProcess": "python ./handler.py",
+    "name": "sentimentanalysis",
+    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
+  },
+  {
     "title": "sha512sum",
     "description": "Generate shasums in 512 format",
     "image": "functions/alpine:latest-arm64",
