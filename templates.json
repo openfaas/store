@@ -358,7 +358,7 @@
         "description": "Classic R (rstats) Template",
         "repo": "https://github.com/analythium/openfaas-rstats-templates",
         "official": "false"
-    }
+    },
     {
         "template": "rstats-base-plumber",
         "platform": "x86_64",
