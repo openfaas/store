@@ -376,23 +376,5 @@
         "description": "ASPNET Functions C# controller template",
         "repo": "https://github.com/goncalo-oliveira/faas-aspnet-template",
         "official": "false"
-    },
-    {
-        "template": "typescript",
-        "platform": "x86_64",
-        "language": "TypeScript",
-        "source": "goncalo-oliveira",
-        "description": "TypeScript + Node 14 + Express template",
-        "repo": "https://github.com/goncalo-oliveira/faas-typescript-template",
-        "official": "false"
-    },
-    {
-        "template": "typescript-fastify",
-        "platform": "x86_64",
-        "language": "TypeScript",
-        "source": "goncalo-oliveira",
-        "description": "TypeScript + Node 14 + Fastify template",
-        "repo": "https://github.com/goncalo-oliveira/faas-typescript-template",
-        "official": "false"
     }
 ]
