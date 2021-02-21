@@ -6,32 +6,77 @@
         "name": "nodeinfo",
         "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
         "images": {
-            "arm64": "functions/nodeinfo:arm64",
-            "armhf": "functions/nodeinfo-http:latest-armhf",
-            "x86_64": "functions/nodeinfo-http:latest"
+            "arm64": "ghcr.io/openfaas/nodeinfo:latest",
+            "armhf": "ghcr.io/openfaas/nodeinfo:latest",
+            "x86_64": "ghcr.io/openfaas/nodeinfo:latest"
         },
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+        "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
-        "title": "sha512sum",
-        "name": "sha512sum",
-        "description": "Generate shasums in 512 format",
+        "title": "shasum",
+        "name": "shasum",
+        "description": "Generate a shasum for the given input",
         "images": {
-            "arm64": "functions/alpine:latest-arm64"
+            "arm64": "ghcr.io/openfaas/alpine:latest",
+            "armhf": "ghcr.io/openfaas/alpine:latest",
+            "x86_64": "ghcr.io/openfaas/alpine:latest"
         },
         "fprocess": "sha512sum",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/AlpineFunction"
+        "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
         "title": "Figlet",
         "name": "figlet",
         "description": "Generate ASCII logos with the figlet CLI",
         "images": {
-            "armhf": "functions/figlet:latest-armhf",
-            "x86_64": "functions/figlet:0.13.0"
+            "arm64": "ghcr.io/openfaas/figlet:latest",
+            "armhf": "ghcr.io/openfaas/figlet:latest",
+            "x86_64": "ghcr.io/openfaas/figlet:latest"
+
         },
         "fprocess": "figlet",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
+        "title": "curl",
+        "name": "curl",
+        "description": "Use curl for network diagnostics, pass the full command-line to the function",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/curl:latest",
+            "arm64": "ghcr.io/openfaas/curl:latest",
+            "armhf": "ghcr.io/openfaas/curl:latest"
+        },
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "write_timeout": "60s"
+        },
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
+        "title": "SentimentAnalysis",
+        "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/sentimentanalysis:latest",
+            "arm64": "ghcr.io/openfaas/sentimentanalysis:latest",
+            "armhf": "ghcr.io/openfaas/sentimentanalysis:latest"
+        },
+        "name": "sentimentanalysis",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
+        "title": "hey",
+        "description": "HTTP load generator, ApacheBench (ab) replacement",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/hey:latest",
+            "arm64": "ghcr.io/openfaas/hey:latest",
+            "armhf": "ghcr.io/openfaas/hey:latest"
+        },
+        "name": "hey",
+        "repo_url": "https://github.com/openfaas/store-functions",
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "write_timeout": "60s"
+        }
     },
     {
         "title": "SSL/TLS cert info",
@@ -105,25 +150,6 @@
         "labels": {
             "com.openfaas.ui.ext": "jpg"
         }
-    },
-    {
-        "title": "curl",
-        "description": "Use curl for network diagnostics, pass the full command-line to the function",
-        "images": {
-            "x86_64": "alexellis/curl:0.1.1"
-        },
-        "name": "curl",
-        "repo_url": "https://github.com/alexellis/curl-function"
-    },
-    {
-        "title": "SentimentAnalysis",
-        "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-        "images": {
-            "x86_64": "functions/sentimentanalysis:latest"
-        },
-        "envProcess": "python ./handler.py",
-        "name": "sentimentanalysis",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
     },
     {
         "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
@@ -376,19 +402,6 @@
 	    "labels": {
 		    "com.openfaas.ui.ext": "png"
 	    }
-    },
-    {
-        "title": "hey",
-        "description": "HTTP load generator, ApacheBench (ab) replacement, formerly known as rakyll/boom",
-        "images": {
-            "x86_64": "functions/hey:0.1.0"
-        },
-        "name": "hey",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/hey",
-        "readOnlyRootFilesystem": true,
-        "environment": {
-            "write_timeout": "60s"
-        }
     }
-    ]
+  ]
 }
