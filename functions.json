@@ -45,6 +45,10 @@
             "armhf": "ghcr.io/openfaas/sleep:latest",
             "x86_64": "ghcr.io/openfaas/sleep:latest"
         },
+        "readOnlyRootFilesystem": true,
+        "environment": {
+            "write_timeout": "60s"
+        },
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
