@@ -37,6 +37,17 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
+        "title": "sleep",
+        "name": "sleep",
+        "description": "Simulate a 2s duration or pass an X-Sleep header and a valid Golang duration",
+        "images": {
+            "arm64": "ghcr.io/openfaas/sleep:latest",
+            "armhf": "ghcr.io/openfaas/sleep:latest",
+            "x86_64": "ghcr.io/openfaas/sleep:latest"
+        },
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "shasum",
         "name": "shasum",
         "description": "Generate a shasum for the given input",
