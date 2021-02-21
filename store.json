@@ -1,5 +1,48 @@
 [
   {
+    "title": "curl",
+    "name": "curl",
+    "description": "Use curl for network diagnostics, pass the full command-line to the function",
+    "image": "ghcr.io/openfaas/curl:latest",
+    "environment": {
+      "write_timeout": "20s"
+    },
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "NodeInfo",
+    "name": "nodeinfo",
+    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+    "image": "ghcr.io/openfaas/nodeinfo:latest",
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "figlet",
+    "name": "figlet",
+    "description": "Generate ASCII logos with the figlet CLI",
+    "image": "ghcr.io/openfaas/figlet:latest",
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "SentimentAnalysis",
+    "name": "sentimentanalysis",
+    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+    "image": "ghcr.io/openfaas/sentimentanalysis:latest",
+    "envProcess": "python ./handler.py",
+    "repo_url": "https://github.com/openfaas/store-functions/"
+  },
+  {
+    "title": "shasum",
+    "description": "Generate a shasum for the given input",
+    "image": "ghcr.io/openfaas/alpine:latest",
+    "name": "sha512sum",
+    "fprocess": "sha512sum",
+    "repo_url": "https://github.com/openfaas/store-functions/"
+  },
+  {
     "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
     "title": "Colorization",
     "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
@@ -64,22 +107,6 @@
     }
   },
   {
-    "title": "SentimentAnalysis",
-    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
-    "image": "functions/sentimentanalysis",
-    "envProcess": "python ./handler.py",
-    "name": "sentimentanalysis",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/SentimentAnalysis"
-  },
-  {
-    "title": "Figlet",
-    "description": "OpenFaaS Figlet image. This repository comes with the blog post http://jmkhael.io/create-a-serverless-ascii-banner-with-faas/",
-    "image": "functions/figlet:0.13.0",
-    "name": "figlet",
-    "repo_url": "https://github.com/faas-and-furious/figlet",
-    "readOnlyRootFilesystem": true
-  },
-  {
     "title": "Face Detection with Pigo",
     "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
     "image": "esimov/pigo-openfaas:0.1",
@@ -93,23 +120,6 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
-  },
-  {
-    "title": "curl",
-    "description": "Use curl for network diagnostics, pass the full command-line to the function",
-    "image": "alexellis/curl:0.1.1",
-    "name": "curl",
-    "repo_url": "https://github.com/alexellis/curl-function",
-    "readOnlyRootFilesystem": true
-  },
-  {
-    "title": "NodeInfo",
-    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
-    "image": "functions/nodeinfo:latest",
-    "name": "nodeinfo",
-    "fprocess": "node main.js",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo",
-    "readOnlyRootFilesystem": true
   },
   {
     "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
@@ -246,29 +256,6 @@
     }
   },
   {
-    "title": "mememachine",
-    "description": "Turn any image into a meme.",
-    "image": "developius/faas-mememachine:0.2",
-    "name": "mememachine",
-    "repo_url": "https://github.com/developius/openfaas-mememachine",
-    "labels": {
-      "com.openfaas.ui.ext": "jpg"
-    }
-  },
-  {
-    "title": "Awesomify",
-    "description": "Make anyone or anything awesome! Pass in the name of a thing or person either in a POST body or a GET parameter named 'q'. The function will return an OGG/Opus audio file with your awesome thing awesomified. For best results use a singular name for your awesome thing. (SPOILER: The audio file contains the 'Everything is Awesome' track by Teegan and Sara mixed-up with your awesome thing.)",
-    "image": "diddledan/awesomify:0.1",
-    "name": "awesomify",
-    "repo_url": "https://github.com/diddledan/awesomify",
-    "environment": {
-      "content_type": "audio/ogg"
-    },
-    "labels": {
-      "com.openfaas.ui.ext": "ogg"
-    }
-  },
-  {
     "title": "Business Strategy Generator",
     "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
     "image": "functions/business-strategy-generator:0.13.0",
@@ -292,15 +279,6 @@
     "labels": {
       "com.openfaas.ui.ext": "jpg"
     }
-  },
-  {
-    "template": "node12-koa-service",
-    "platform": "x86_64",
-    "language": "Node.js",
-    "source": "phumberdroz",
-    "description": "A Openfaas Service Node.js template using koa",
-    "repo": "https://github.com/phumberdroz/openfaas-node12-koa-service",
-    "official": "false"
   },
   {
     "title": "Image EXIF Reader",

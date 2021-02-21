@@ -1,19 +1,46 @@
 [
   {
-    "title": "NodeInfo",
-    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
-    "image": "functions/nodeinfo:latest-armhf",
-    "name": "nodeinfo",
-    "fprocess": "node main.js",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+    "title": "curl",
+    "name": "curl",
+    "description": "Use curl for network diagnostics, pass the full command-line to the function",
+    "image": "ghcr.io/openfaas/curl:latest",
+    "environment": {
+      "write_timeout": "20s"
+    },
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
   },
   {
-    "title": "Figlet",
-    "description": "Generate ASCII logos with the figlet CLI",
-    "image": "functions/figlet:latest-armhf",
+    "title": "NodeInfo",
+    "name": "nodeinfo",
+    "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+    "image": "ghcr.io/openfaas/nodeinfo:latest",
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "figlet",
     "name": "figlet",
-    "fprocess": "figlet",
-    "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/figlet"
+    "description": "Generate ASCII logos with the figlet CLI",
+    "image": "ghcr.io/openfaas/figlet:latest",
+    "repo_url": "https://github.com/openfaas/store-functions/",
+    "readOnlyRootFilesystem": true
+  },
+  {
+    "title": "SentimentAnalysis",
+    "name": "sentimentanalysis",
+    "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
+    "image": "ghcr.io/openfaas/sentimentanalysis:latest",
+    "envProcess": "python ./handler.py",
+    "repo_url": "https://github.com/openfaas/store-functions/"
+  },
+  {
+    "title": "shasum",
+    "description": "Generate a shasum for the given input",
+    "image": "ghcr.io/openfaas/alpine:latest",
+    "name": "sha512sum",
+    "fprocess": "sha512sum",
+    "repo_url": "https://github.com/openfaas/store-functions/"
   },
   {
     "title": "Left-Pad",
