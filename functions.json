@@ -13,6 +13,30 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
+        "title": "alpine",
+        "name": "alpine",
+        "description": "An Alpine Linux shell, set the \"fprocess\" to a bash built-in you want to run like \"env\" or \"cal\". By default alpine runs \"cat\" and can be used to echo the HTTP input.",
+        "images": {
+            "arm64": "ghcr.io/openfaas/alpine:latest",
+            "armhf": "ghcr.io/openfaas/alpine:latest",
+            "x86_64": "ghcr.io/openfaas/alpine:latest"
+        },
+        "fprocess": "cat",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
+        "title": "env",
+        "name": "env",
+        "description": "Print the environment variables present in the function and HTTP request",
+        "images": {
+            "arm64": "ghcr.io/openfaas/alpine:latest",
+            "armhf": "ghcr.io/openfaas/alpine:latest",
+            "x86_64": "ghcr.io/openfaas/alpine:latest"
+        },
+        "fprocess": "env",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "shasum",
         "name": "shasum",
         "description": "Generate a shasum for the given input",
@@ -65,13 +89,13 @@
     },
     {
         "title": "hey",
+        "name": "hey",
         "description": "HTTP load generator, ApacheBench (ab) replacement",
         "images": {
             "x86_64": "ghcr.io/openfaas/hey:latest",
             "arm64": "ghcr.io/openfaas/hey:latest",
             "armhf": "ghcr.io/openfaas/hey:latest"
         },
-        "name": "hey",
         "repo_url": "https://github.com/openfaas/store-functions",
         "readOnlyRootFilesystem": true,
         "environment": {
