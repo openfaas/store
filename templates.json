@@ -198,7 +198,7 @@
         "official": "true"
     },
     {
-        "template": "powershell-template",
+        "template": "powershell",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
@@ -207,7 +207,7 @@
         "official": "true"
     },
     {
-        "template": "powershell-http-template",
+        "template": "powershell-http",
         "platform": "x86_64",
         "language": "Python",
         "source": "openfaas-incubator",
