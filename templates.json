@@ -54,6 +54,15 @@
         "official": "true"
     },
     {
+        "template": "node14",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 14 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "node12",
         "platform": "x86_64",
         "language": "NodeJS",
