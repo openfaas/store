@@ -118,6 +118,17 @@
         }
     },
     {
+        "title": "nslookup",
+        "description": "Query the nameserver for the IP address of the given HOST optionally using a specified DNS server",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/nslookup:latest",
+            "armhf": "ghcr.io/openfaas/nslookup:latest",
+            "arm64": "ghcr.io/openfaas/nslookup:latest"
+        },
+        "name": "nslookup",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "SSL/TLS cert info",
         "name": "certinfo",
         "description": "Returns SSL/TLS certificate information for a given URL",
@@ -284,16 +295,6 @@
             "read_timeout": "60s",
             "write_timeout": "60s"
         }
-    },
-    {
-        "title": "nslookup",
-        "description": "Uses nslookup to return any IP address info on domains and URLs",
-        "images": {
-            "x86_64": "jockdarock/nslookupfaas:master",
-            "armhf": "jockdarock/nslookup-arm-faas:latest-armhf"
-        },
-        "name": "nslookup",
-        "repo_url": "https://github.com/jockdarock/nslookup_faas"
     },
     {
         "title": "Docker Image Manifest Query",
