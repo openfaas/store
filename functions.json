@@ -258,7 +258,6 @@
             "x86_64": "ghcr.io/openfaas/cows:latest"
         },
         "name": "cows",
-        "fprocess": "node show_cow.js",
         "repo_url": "https://github.com/openfaas/store-functions",
         "readOnlyRootFilesystem": true
     },
