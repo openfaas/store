@@ -1,6 +1,6 @@
 # OpenFaaS Function Store
 
-[![Build Status](https://github.com/openfaas/store/workflows/build/badge.svg?branch=master)](https://github.com/openfaas/store/actions)
+[![ci-only](https://github.com/openfaas/store/actions/workflows/ci-only.yml/badge.svg)](https://github.com/openfaas/store/actions/workflows/ci-only.yml)
 
 The Function Store is a curated index of OpenFaaS functions which have been tested by the community and chosen for their experience.
 
