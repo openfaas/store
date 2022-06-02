@@ -27,15 +27,6 @@
         "official": "true"
     },
     {
-        "template": "java8",
-        "platform": "x86_64",
-        "language": "Java",
-        "source": "openfaas",
-        "description": "Java 8 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
         "template": "java11",
         "platform": "x86_64",
         "language": "Java",
@@ -50,6 +41,24 @@
         "language": "Java",
         "source": "openfaas",
         "description": "Java 11 Vert.x template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "node17",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 17 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "node16",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 16 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
