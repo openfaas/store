@@ -99,6 +99,15 @@
         "official": "true"
     },
     {
+        "template": "php8",
+        "platform": "x86_64",
+        "language": "PHP",
+        "source": "openfaas",
+        "description": "Classic PHP 8 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "python",
         "platform": "x86_64",
         "language": "Python",
