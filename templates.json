@@ -90,6 +90,15 @@
         "official": "true"
     },
     {
+        "template": "puppeteer-nodelts",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "alexellis",
+        "description": "A puppeteer template for headless Chrome",
+        "repo": "https://github.com/alexellis/openfaas-puppeteer-template",
+        "official": "true"
+    },
+    {
         "template": "php7",
         "platform": "x86_64",
         "language": "PHP",
