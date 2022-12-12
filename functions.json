@@ -92,6 +92,18 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
+        "title": "printer",
+        "name": "printer",
+        "description": "Print out the HTTP headers and body of any invocation",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/printer:latest",
+            "arm64": "ghcr.io/openfaas/printer:latest",
+            "armhf": "ghcr.io/openfaas/printer:latest"
+        },
+        "readOnlyRootFilesystem": true,
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "SentimentAnalysis",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
         "images": {
