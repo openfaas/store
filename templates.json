@@ -45,6 +45,15 @@
         "official": "true"
     },
     {
+        "template": "node18",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 18 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "node17",
         "platform": "x86_64",
         "language": "NodeJS",
