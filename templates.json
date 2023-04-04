@@ -1,14 +1,5 @@
 [
     {
-        "template": "csharp",
-        "platform": "x86_64",
-        "language": "C#",
-        "source": "openfaas",
-        "description": "Classic C# template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
         "template": "dockerfile",
         "platform": "x86_64",
         "language": "Dockerfile",
@@ -18,30 +9,21 @@
         "official": "true"
     },
     {
-        "template": "go",
+        "template": "golang-middleware",
         "platform": "x86_64",
         "language": "Go",
         "source": "openfaas",
-        "description": "Classic Golang template",
-        "repo": "https://github.com/openfaas/templates",
+        "description": "HTTP middleware interface in Go",
+        "repo": "https://github.com/openfaas/golang-http-template",
         "official": "true"
     },
     {
-        "template": "java11",
+        "template": "golang-http",
         "platform": "x86_64",
-        "language": "Java",
+        "language": "Go",
         "source": "openfaas",
-        "description": "Java 11 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "java11-vert-x",
-        "platform": "x86_64",
-        "language": "Java",
-        "source": "openfaas",
-        "description": "Java 11 Vert.x template",
-        "repo": "https://github.com/openfaas/templates",
+        "description": "Request/response style HTTP template",
+        "repo": "https://github.com/openfaas/golang-http-template",
         "official": "true"
     },
     {
@@ -94,17 +76,8 @@
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas",
-        "description": "Classic NodeJS 8 template",
+        "description": "Legacy Node 12 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "puppeteer-nodelts",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "alexellis",
-        "description": "A puppeteer template for headless Chrome",
-        "repo": "https://github.com/alexellis/openfaas-puppeteer-template",
         "official": "true"
     },
     {
@@ -141,33 +114,6 @@
         "source": "openfaas",
         "description": "Classic Python 3.6 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "python3-dlrs",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "intel",
-        "description": "Deep Learning Reference Stack v0.4 for ML workloads",
-        "repo": "https://github.com/intel/stacks-templates-openfaas",
-        "official": "false"
-    },
-    {
-        "template": "ruby",
-        "platform": "x86_64",
-        "language": "Ruby",
-        "source": "openfaas",
-        "description": "Classic Ruby 2.5 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "ruby-http",
-        "platform": "x86_64",
-        "language": "Ruby",
-        "source": "openfaas",
-        "description": "Ruby 2.4 HTTP template",
-        "repo": "https://github.com/openfaas/ruby-http",
         "official": "true"
     },
     {
@@ -216,21 +162,30 @@
         "official": "true"
     },
     {
-        "template": "golang-http",
+        "template": "bash-streaming",
         "platform": "x86_64",
-        "language": "Go",
-        "source": "openfaas",
-        "description": "Golang HTTP template",
-        "repo": "https://github.com/openfaas/golang-http-template",
+        "language": "Bash",
+        "source": "openfaas-incubator",
+        "description": "Bash Streaming template",
+        "repo": "https://github.com/alexellis/openfaas-streaming-templates",
         "official": "true"
     },
     {
-        "template": "golang-middleware",
+        "template": "java11",
         "platform": "x86_64",
-        "language": "Go",
+        "language": "Java",
         "source": "openfaas",
-        "description": "Golang Middleware template",
-        "repo": "https://github.com/openfaas/golang-http-template",
+        "description": "Java 11 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "java11-vert-x",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "openfaas",
+        "description": "Java 11 Vert.x template",
+        "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
     {
@@ -243,13 +198,58 @@
         "official": "true"
     },
     {
-        "template": "powershell-template",
+        "template": "go",
         "platform": "x86_64",
-        "language": "Python",
-        "source": "openfaas-incubator",
-        "description": "Powershell Core Ubuntu:16.04 template",
-        "repo": "https://github.com/openfaas-incubator/powershell-template",
+        "language": "Go",
+        "source": "openfaas",
+        "description": "Legacy Golang template",
+        "repo": "https://github.com/openfaas/templates",
         "official": "true"
+    },
+    {
+        "template": "ruby",
+        "platform": "x86_64",
+        "language": "Ruby",
+        "source": "openfaas",
+        "description": "Classic Ruby 2.5 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
+        "template": "ruby-http",
+        "platform": "x86_64",
+        "language": "Ruby",
+        "source": "openfaas",
+        "description": "Ruby 2.4 HTTP template",
+        "repo": "https://github.com/openfaas/ruby-http",
+        "official": "true"
+    },
+    {
+        "template": "rust",
+        "platform": "x86_64",
+        "language": "Rust",
+        "source": "openfaas-incubator",
+        "description": "Community Rust template",
+        "repo": "https://github.com/openfaas-incubator/openfaas-rust-template",
+        "official": "false"
+    },
+    {
+        "template": "puppeteer-nodelts",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "alexellis",
+        "description": "A puppeteer template for headless Chrome",
+        "repo": "https://github.com/alexellis/openfaas-puppeteer-template",
+        "official": "true"
+    },
+    {
+        "template": "rust-http",
+        "platform": "x86_64",
+        "language": "Rust",
+        "source": "openfaas-incubator",
+        "description": "Community Rust template with HTTP bindings",
+        "repo": "https://github.com/openfaas-incubator/openfaas-rust-template",
+        "official": "false"
     },
     {
         "template": "powershell-http-template",
@@ -261,13 +261,13 @@
         "official": "true"
     },
     {
-        "template": "rust",
+        "template": "powershell-template",
         "platform": "x86_64",
-        "language": "Rust",
-        "source": "booyaa",
-        "description": "Rust template",
-        "repo": "https://github.com/openfaas-incubator/openfaas-rust-template",
-        "official": "false"
+        "language": "Python",
+        "source": "openfaas-incubator",
+        "description": "Powershell Core Ubuntu:16.04 template",
+        "repo": "https://github.com/openfaas-incubator/powershell-template",
+        "official": "true"
     },
     {
         "template": "crystal",
@@ -286,6 +286,15 @@
         "description": "C# HTTP template",
         "repo": "https://github.com/distantcam/csharp-httprequest-template",
         "official": "false"
+    },
+    {
+        "template": "csharp",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "openfaas",
+        "description": "Classic C# template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
     },
     {
         "template": "csharp-kestrel",
@@ -369,30 +378,21 @@
         "official": "false"
     },
     {
-        "template": "rust-http",
-        "platform": "x86_64",
-        "language": "Rust",
-        "source": "openfaas-incubator",
-        "description": "Rust HTTP template",
-        "repo": "https://github.com/openfaas-incubator/rust-http-template",
-        "official": "true"
-    },
-    {
-        "template": "bash-streaming",
-        "platform": "x86_64",
-        "language": "Bash",
-        "source": "openfaas-incubator",
-        "description": "Bash Streaming template",
-        "repo": "https://github.com/alexellis/openfaas-streaming-templates",
-        "official": "true"
-    },
-    {
         "template": "cobol",
         "platform": "x86_64",
         "language": "COBOL",
         "source": "devries",
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
+        "official": "false"
+    },
+    {
+        "template": "python3-dlrs",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "intel",
+        "description": "Deep Learning Reference Stack v0.4 for ML workloads",
+        "repo": "https://github.com/intel/stacks-templates-openfaas",
         "official": "false"
     }
 ]
