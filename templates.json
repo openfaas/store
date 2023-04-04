@@ -7,7 +7,7 @@
         "description": "Classic Dockerfile template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "golang-middleware",
@@ -17,7 +17,7 @@
         "description": "HTTP middleware interface in Go",
         "repo": "https://github.com/openfaas/golang-http-template",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "golang-http",
@@ -36,7 +36,7 @@
         "description": "HTTP-based Node 18 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "node17",
@@ -100,7 +100,7 @@
         "description": "Classic PHP 8 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "python",
@@ -155,7 +155,7 @@
         "description": "Python 3.7 with Flask and HTTP",
         "repo": "https://github.com/openfaas/python-flask-template",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "python3-http-debian",
@@ -165,7 +165,7 @@
         "description": "Python 3.7 with Flask and HTTP based on Debian",
         "repo": "https://github.com/openfaas/python-flask-template",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "bash-streaming",
@@ -175,7 +175,7 @@
         "description": "Bash Streaming template",
         "repo": "https://github.com/alexellis/openfaas-streaming-templates",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "java11",
@@ -194,7 +194,7 @@
         "description": "Java 11 Vert.x template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "python3-debian",
@@ -231,7 +231,7 @@
         "description": "Ruby 2.4 HTTP template",
         "repo": "https://github.com/openfaas/ruby-http",
         "official": "true",
-        "recommended": "true"
+        "recommended": true
     },
     {
         "template": "rust",
