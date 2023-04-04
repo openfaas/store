@@ -1,10 +1,11 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "functions": [
     {
         "title": "NodeInfo",
         "name": "nodeinfo",
-        "description": "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
+        "author":"openfaas",
+        "description": "Get info about the container i.e. CPU count, hostname, OS, and uptime",
         "images": {
             "arm64": "ghcr.io/openfaas/nodeinfo:latest",
             "armhf": "ghcr.io/openfaas/nodeinfo:latest",
@@ -13,21 +14,10 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
-        "title": "alpine",
-        "name": "alpine",
-        "description": "An Alpine Linux shell, set the \"fprocess\" to a bash built-in you want to run like \"env\" or \"cal\". By default alpine runs \"cat\" and can be used to echo the HTTP input.",
-        "images": {
-            "arm64": "ghcr.io/openfaas/alpine:latest",
-            "armhf": "ghcr.io/openfaas/alpine:latest",
-            "x86_64": "ghcr.io/openfaas/alpine:latest"
-        },
-        "fprocess": "cat",
-        "repo_url": "https://github.com/openfaas/store-functions"
-    },
-    {
         "title": "env",
         "name": "env",
         "description": "Print the environment variables present in the function and HTTP request",
+        "author":"openfaas",
         "images": {
             "arm64": "ghcr.io/openfaas/alpine:latest",
             "armhf": "ghcr.io/openfaas/alpine:latest",
@@ -39,6 +29,7 @@
     {
         "title": "sleep",
         "name": "sleep",
+        "author":"openfaas",
         "description": "Simulate a 2s duration or pass an X-Sleep header and a valid Golang duration",
         "images": {
             "arm64": "ghcr.io/openfaas/sleep:latest",
@@ -54,6 +45,7 @@
     {
         "title": "shasum",
         "name": "shasum",
+        "author":"openfaas",
         "description": "Generate a shasum for the given input",
         "images": {
             "arm64": "ghcr.io/openfaas/alpine:latest",
@@ -66,6 +58,7 @@
     {
         "title": "Figlet",
         "name": "figlet",
+        "author":"openfaas",
         "description": "Generate ASCII logos with the figlet CLI",
         "images": {
             "arm64": "ghcr.io/openfaas/figlet:latest",
@@ -79,6 +72,7 @@
     {
         "title": "curl",
         "name": "curl",
+        "author":"openfaas",
         "description": "Use curl for network diagnostics, pass the full command-line to the function",
         "images": {
             "x86_64": "ghcr.io/openfaas/curl:latest",
@@ -94,6 +88,7 @@
     {
         "title": "printer",
         "name": "printer",
+        "author":"openfaas",
         "description": "Print out the HTTP headers and body of any invocation",
         "images": {
             "x86_64": "ghcr.io/openfaas/printer:latest",
@@ -105,6 +100,7 @@
     },
     {
         "title": "SentimentAnalysis",
+        "author":"openfaas",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
         "images": {
             "x86_64": "ghcr.io/openfaas/sentimentanalysis:latest",
@@ -117,6 +113,7 @@
     {
         "title": "hey",
         "name": "hey",
+        "author":"openfaas",
         "description": "HTTP load generator, ApacheBench (ab) replacement",
         "images": {
             "x86_64": "ghcr.io/openfaas/hey:latest",
@@ -131,6 +128,7 @@
     },
     {
         "title": "nslookup",
+        "author":"openfaas",
         "description": "Query the nameserver for the IP address of the given HOST optionally using a specified DNS server",
         "images": {
             "x86_64": "ghcr.io/openfaas/nslookup:latest",
@@ -143,6 +141,7 @@
     {
         "title": "SSL/TLS cert info",
         "name": "certinfo",
+        "author":"stefanprodan",
         "description": "Returns SSL/TLS certificate information for a given URL",
         "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "images": {
@@ -154,6 +153,7 @@
     {
         "title": "Colorization",
         "name": "colorise",
+        "author":"alexellis",
         "description": "Turn black and white photos to color using a URL as the request. The colorization function was popularised by @colorisebot by Alex Ellis and Finnian Anderson.",
         "icon": "https://pbs.twimg.com/profile_images/927538119901175814/4uhYwTyC_400x400.jpg",
         "images": {
@@ -174,6 +174,7 @@
     {
         "title": "Inception",
         "name": "inception",
+        "author":"alexellis",
         "description": "This is a forked version of the work by Magnus Erik Hvass Pedersen - it has been re-packaged as an OpenFaaS serverless function.",
         "images": {
             "x86_64": "alexellis/inception:2019-02-17"
@@ -186,18 +187,21 @@
         }
     },
     {
-        "title": "Have I Been Pwned",
-        "icon": "https://store-images.s-microsoft.com/image/apps.2401.13510798883203237.d9b40472-ef9e-459e-88a8-fd9ee8e1466b.2a730341-fe3c-4e7f-baba-f147cbd7532b?w=180&h=180&q=60",
-        "description": "The Have I Been Pwned function lets you know if your password has been used in a data-breach published on https://haveibeenpwned.com",
+        "title": "alpine",
+        "name": "alpine",
+        "author":"openfaas",
+        "description": "An Alpine Linux shell, set the \"fprocess\" to a bash built-in you want to run like \"env\" or \"cal\". By default alpine runs \"cat\" and can be used to echo the HTTP input.",
         "images": {
-            "x86_64": "functions/haveibeenpwned:0.13.0"
+            "arm64": "ghcr.io/openfaas/alpine:latest",
+            "armhf": "ghcr.io/openfaas/alpine:latest",
+            "x86_64": "ghcr.io/openfaas/alpine:latest"
         },
-        "name": "haveibeenpwned",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/haveibeenpwned",
-        "readOnlyRootFilesystem": true
+        "fprocess": "cat",
+        "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
         "title": "Face Detection with Pigo",
+        "author":"esimov",
         "description": "Detect faces in images using the Pigo face detection library. You provide an image URI and the function draws boxes around the detected faces.",
         "images": {
             "x86_64": "esimov/pigo-openfaas:0.1"
@@ -216,6 +220,7 @@
     {
         "icon": "https://raw.githubusercontent.com/viveksyngh/openfaas-ocr/master/logo/ocr.png",
         "title": "Tesseract OCR",
+        "author":"viveksyngh",
         "description": "This function brings OCR - Optical Character Recognition through the tesseract engine. Just pass in a URL or base64 string of an image in .jpg or .png format.",
         "images": {
             "x86_64": "viveksyngh/openfaas-ocr:0.3.0"
@@ -224,19 +229,9 @@
         "repo_url": "https://github.com/viveksyngh/openfaas-ocr"
     },
     {
-        "icon": "https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png",
-        "title": "Dockerhub Stats",
-        "description": "Golang function gives the count of repos a user has on the Docker hub",
-        "images": {
-            "x86_64": "functions/hubstats:latest"
-        },
-        "name": "hubstats",
-        "repo_url": "https://github.com/openfaas/faas",
-        "readOnlyRootFilesystem": true
-    },
-    {
         "icon": "https://raw.githubusercontent.com/faas-and-furious/qrcode/master/images/qrcode.png",
         "title": "QR Code Generator - Go",
+        "author":"alexellis",
         "description": "QR Code generator using Go",
         "images": {
             "x86_64": "alexellis/qrcode:0.1"
@@ -250,12 +245,13 @@
     {
         "icon": "https://nmap.org/images/nmap-logo-256x256.png",
         "title": "Nmap Security Scanner",
-        "description": "Tool for network discovery and security auditing. Warning: use with caution on public clouds.",
+        "author": "openfaas",
+        "description": "Tool for network discovery and security auditing.",
         "images": {
-            "x86_64": "functions/nmap:0.13.0"
+            "x86_64": "ghcr.io/openfaas/nmap:latest"
         },
         "name": "nmap",
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/Nmap",
+        "repo_url": "https://github.com/openfaas/store-function",
         "environment": {
             "read_timeout": "300s",
             "write_timeout": "300s"
@@ -264,6 +260,7 @@
     {
         "title": "ASCII Cows",
         "description": "Generate a random ASCII cow",
+        "author": "openfaas",
         "images": {
             "arm64": "ghcr.io/openfaas/cows:latest",
             "armhf": "ghcr.io/openfaas/cows:latest",
@@ -276,6 +273,7 @@
     {
         "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
         "title": "YouTube Video Downloader",
+        "author": "rgee0",
         "description": "Download YouTube videos as a function",
         "images": {
             "armhf": "rgee0/faas-youtubedl:latest",
@@ -294,6 +292,7 @@
     {
         "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
         "title": "OpenFaaS Text-to-Speech",
+        "author": "rorpage",
         "description": "Generate an MP3 of text using Google's Text-to-Speech",
         "images": {
             "x86_64": "rorpage/text-to-speech:latest",
@@ -312,6 +311,7 @@
     {
         "title": "Docker Image Manifest Query",
         "description": "Query an image on the Docker Hub for supported architectures - by Phil Estes",
+        "author": "rgee0",
         "images": {
             "x86_64": "rgee0/of-mquery:1.2",
             "armhf": "rgee0/of-mquery:1.2"
@@ -322,6 +322,7 @@
     },
     {
         "title": "face-detect with OpenCV",
+        "author": "alexellis",
         "description": "Detect faces in images. Send a URL as input and download a file with boxes drawn around detected faces. From our friend Nic Jackson",
         "images": {
             "x86_64": "alexellis2/facedetect:0.1"
@@ -340,8 +341,9 @@
     {
         "title": "Face blur by Endre Simo",
         "description": "Blur out faces detected in JPEGs. Invoke with the URL to the image.",
+        "author": "esimov",
         "images": {
-            "x86_64": "ofcommunity/teamserverless-pigo-openfaas-faceblur-pigo-openfaas-faceblur:0.1-master-7018614"
+            "x86_64": "esimov/pigo-openfaas-faceblur:0.1"
         },
         "name": "face-blur",
         "repo_url": "https://github.com/esimov/pigo-openfaas-faceblur",
@@ -356,18 +358,8 @@
         }
     },
     {
-        "title": "Left-Pad",
-        "description": "left-pad on OpenFaaS",
-        "images": {
-            "x86_64": "functions/faas-leftpad:0.2",
-            "armhf": "rgee0/faas-leftpad:latest"
-        },
-        "name": "leftpad",
-        "repo_url": "https://github.com/faas-and-furious/faas-leftpad",
-        "readOnlyRootFilesystem": true
-    },
-    {
         "title": "normalisecolor",
+        "author": "alexellis",
         "description": "Automatically fix white-balance in photos through imagemagick.",
         "images": {
             "x86_64": "alexellis2/normalisecolor:0.2.1"
@@ -378,31 +370,9 @@
         "readOnlyRootFilesystem": false
     },
     {
-        "title": "mememachine",
-        "description": "Turn any image into a meme.",
-        "images": {
-            "x86_64": "developius/faas-mememachine:0.2"
-        },
-        "name": "mememachine",
-        "repo_url": "https://github.com/developius/openfaas-mememachine",
-        "labels": {
-            "com.openfaas.ui.ext": "jpg"
-        }
-    },
-    {
-        "title": "Business Strategy Generator",
-        "description": "Generates a Business Strategy (using a package from Nisha Kumar, inspired by Simon Wardley)",
-        "images": {
-            "x86_64": "functions/business-strategy-generator:0.13.0"
-        },
-        "name": "business-strategy-generator",
-        "repo_url": "https://github.com/alexellis/strategy_generator",
-        "readOnlyRootFilesystem": true,
-        "platform": "x86_64"
-    },
-    {
         "title": "Line Drawing Generator from a photograph",
         "description": "Automatically generates a sketch like image art based on the provided image",
+        "author": "esimov",
         "images": {
             "x86_64": "esimov/colidr-openfaas:0.1"
         },
@@ -421,6 +391,7 @@
     },
     {
         "title": "Image EXIF Reader",
+        "author": "servernull",
         "description": "Reads EXIF information from an URL or base64 encoded image and returns JSON",
         "images": {
             "x86_64": "servernull/openfaas-exif:0.1.0"
@@ -430,6 +401,7 @@
     },
     {
         "title": "Open NSFW Model",
+        "author": "servernull",
         "description": "Score images for NSFW (nudity) content.",
         "images": {
             "x86_64": "servernull/openfaas-opennsfw:0.1.0"
@@ -439,6 +411,7 @@
     },
     {
         "title": "Identicon Generator",
+        "author": "rgee0",
         "description": "Create an identicon from a provided string value",
         "images": {
             "x86_64": "rgee0/identicon:1.0",
