@@ -99,6 +99,27 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
+        "title": "youtube-dl",
+        "name": "youtube-dl",
+        "author":"openfaas",
+        "description": "Download a video from YouTube using youtube-dl",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/youtube-dl:latest",
+            "arm64": "ghcr.io/openfaas/youtube-dl:latest",
+            "armhf": "ghcr.io/openfaas/youtube-dl:latest"
+        },
+        "readOnlyRootFilesystem": true,
+        "repo_url": "https://github.com/openfaas/store-functions",
+        "labels": {
+            "com.openfaas.ui.ext": "mp4"
+        },
+        "environment": {
+            "read_timeout": "5m5s",
+            "write_timeout": "5m5s",
+            "exec_timeout": "5m"
+        }
+    },
+    {
         "title": "SentimentAnalysis",
         "author":"openfaas",
         "description": "Python function provides a rating on sentiment positive/negative (polarity -1.0-1.0) and subjectivity to provided to each of the sentences sent.",
@@ -269,25 +290,6 @@
         "name": "cows",
         "repo_url": "https://github.com/openfaas/store-functions",
         "readOnlyRootFilesystem": true
-    },
-    {
-        "icon": "https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg",
-        "title": "YouTube Video Downloader",
-        "author": "rgee0",
-        "description": "Download YouTube videos as a function",
-        "images": {
-            "armhf": "rgee0/faas-youtubedl:latest",
-            "x86_64": "rgee0/faas-youtubedl:latest"
-        },
-        "name": "youtube-dl",
-        "repo_url": "https://github.com/faas-and-furious/youtube-dl",
-        "labels": {
-            "com.openfaas.ui.ext": "mp4"
-        },
-        "environment": {
-            "read_timeout": "300s",
-            "write_timeout": "300s"
-        }
     },
     {
         "icon": "https://ssl.gstatic.com/translate/community/backgrounds/globe.png",
