@@ -394,14 +394,5 @@
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
         "official": "false"
-    },
-    {
-        "template": "python3-dlrs",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "intel",
-        "description": "Deep Learning Reference Stack v0.4 for ML workloads",
-        "repo": "https://github.com/intel/stacks-templates-openfaas",
-        "official": "false"
     }
 ]
