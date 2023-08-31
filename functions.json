@@ -430,6 +430,26 @@
 	    "labels": {
 		    "com.openfaas.ui.ext": "png"
 	    }
+    },
+    {
+        "title": "chaos",
+        "name": "chaos",
+        "author": "alexellis",
+        "description": "A function for chaos testing with OpenFaaS",
+        "images": {
+            "x86_64": "alexellis2/chaos-fn:0.1.1"
+        },
+        "environment": {
+            "write_timeout": "5m30s",
+            "read_timeout": "5m30s",
+            "exec_timeout": "5m30s"
+        },
+        "labels": {
+            "com.openfaas.min.scale": "1",
+            "com.openfaas.max.scale": "1"
+        },
+        "repo_url": "https://github.com/alexellis/chaos-fn",
+        "readOnlyRootFilesystem": true
     }
   ]
 }
