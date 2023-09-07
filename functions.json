@@ -441,8 +441,8 @@
             "x86_64": "alexellis2/chaos-fn:0.1.1"
         },
         "environment": {
-            "write_timeout": "5m30s",
-            "read_timeout": "5m30s",
+            "write_timeout": "5m31s",
+            "read_timeout": "5m31s",
             "exec_timeout": "5m30s"
         },
         "labels": {
