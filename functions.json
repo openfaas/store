@@ -166,10 +166,11 @@
         "description": "Returns SSL/TLS certificate information for a given URL",
         "icon": "https://raw.githubusercontent.com/stefanprodan/openfaas-certinfo/master/logo.png",
         "images": {
-            "armhf": "rgee0/certinfo:armhf",
-            "x86_64": "stefanprodan/certinfo:latest"
+            "x86_64": "ghcr.io/openfaas/certinfo-fn:latest",
+            "armhf": "ghcr.io/openfaas/certinfo-fn:latest",
+            "arm64": "ghcr.io/openfaas/certinfo-fn:latest"
         },
-        "repo_url": "https://github.com/stefanprodan/openfaas-certinfo"
+        "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
         "title": "Colorization",
