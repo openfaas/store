@@ -403,5 +403,14 @@
         "description": "Deep Learning Reference Stack v0.4 for ML workloads",
         "repo": "https://github.com/intel/stacks-templates-openfaas",
         "official": "false"
+    },
+    {
+        "template": "fsharp-httprequest",
+        "platform": "x86_64",
+        "language": "F#",
+        "source": "zakaluka",
+        "description": "F# HTTP Template",
+        "repo": "https://github.com/zakaluka/fsharp-httprequest-template",
+        "official": "false"
     }
 ]
