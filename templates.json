@@ -75,6 +75,16 @@
         "official": "true"
     },
     {
+        "template": "bun-express",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based template using bun",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true",
+        "recommended": false
+    },
+    {
         "template": "node",
         "platform": "x86_64",
         "language": "NodeJS",
@@ -393,15 +403,6 @@
         "source": "devries",
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
-        "official": "false"
-    },
-    {
-        "template": "python3-dlrs",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "intel",
-        "description": "Deep Learning Reference Stack v0.4 for ML workloads",
-        "repo": "https://github.com/intel/stacks-templates-openfaas",
         "official": "false"
     }
 ]
