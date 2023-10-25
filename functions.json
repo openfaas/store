@@ -104,9 +104,9 @@
         "author":"openfaas",
         "description": "Find the egress IP used by a function",
         "images": {
-            "x86_64": "ghcr.io/openfaas/external-ip:latest",
-            "arm64": "ghcr.io/openfaas/external-ip:latest",
-            "armhf": "ghcr.io/openfaas/external-ip:latest"
+            "x86_64": "ghcr.io/openfaas/external-ip-fn:latest",
+            "arm64": "ghcr.io/openfaas/external-ip-fn:latest",
+            "armhf": "ghcr.io/openfaas/external-ip-fn:latest"
         },
         "readOnlyRootFilesystem": true,
         "environment": {
