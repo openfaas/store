@@ -56,7 +56,7 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
-        "title": "Figlet",
+        "title": "figlet",
         "name": "figlet",
         "author":"openfaas",
         "description": "Generate ASCII logos with the figlet CLI",
@@ -67,6 +67,19 @@
 
         },
         "fprocess": "figlet",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
+        "title": "printer",
+        "name": "printer",
+        "author":"openfaas",
+        "description": "Print out the HTTP headers and body of any invocation",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/printer:latest",
+            "arm64": "ghcr.io/openfaas/printer:latest",
+            "armhf": "ghcr.io/openfaas/printer:latest"
+        },
+        "readOnlyRootFilesystem": true,
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
@@ -86,16 +99,19 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
-        "title": "printer",
-        "name": "printer",
+        "title": "external-ip",
+        "name": "external-ip",
         "author":"openfaas",
-        "description": "Print out the HTTP headers and body of any invocation",
+        "description": "Find the egress IP used by a function",
         "images": {
-            "x86_64": "ghcr.io/openfaas/printer:latest",
-            "arm64": "ghcr.io/openfaas/printer:latest",
-            "armhf": "ghcr.io/openfaas/printer:latest"
+            "x86_64": "ghcr.io/openfaas/external-ip:latest",
+            "arm64": "ghcr.io/openfaas/external-ip:latest",
+            "armhf": "ghcr.io/openfaas/external-ip:latest"
         },
         "readOnlyRootFilesystem": true,
+        "environment": {
+            "write_timeout": "60s"
+        },
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
