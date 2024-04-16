@@ -29,6 +29,16 @@
         "official": "true"
     },
     {
+        "template": "dotnet8-csharp",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "openfaas",
+        "description": "C# template using WebApplication",
+        "repo": "https://github.com/openfaas/dotnet-templates",
+        "official": "true",
+        "recommended": true
+    },
+    {
         "template": "node18",
         "platform": "x86_64",
         "language": "NodeJS",
@@ -39,42 +49,6 @@
         "recommended": true
     },
     {
-        "template": "node17",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "openfaas",
-        "description": "HTTP-based Node 17 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "node16",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "openfaas",
-        "description": "HTTP-based Node 16 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "node14",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "openfaas",
-        "description": "HTTP-based Node 14 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "node12",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "openfaas",
-        "description": "HTTP-based Node 12 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
         "template": "bun-express",
         "platform": "x86_64",
         "language": "NodeJS",
@@ -83,15 +57,6 @@
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
         "recommended": false
-    },
-    {
-        "template": "node",
-        "platform": "x86_64",
-        "language": "NodeJS",
-        "source": "openfaas",
-        "description": "Legacy Node 12 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
     },
     {
         "template": "php7",
@@ -128,15 +93,6 @@
         "source": "openfaas",
         "description": "Classic Python 3 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "python27-flask",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "openfaas",
-        "description": "Python 2.7 Flask template",
-        "repo": "https://github.com/openfaas/python-flask-template",
         "official": "true"
     },
     {
@@ -277,7 +233,7 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core HTTP Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-http-template",
-        "official": "true"
+        "official": "false"
     },
     {
         "template": "powershell-template",
@@ -286,87 +242,6 @@
         "source": "openfaas-incubator",
         "description": "Powershell Core Ubuntu:16.04 template",
         "repo": "https://github.com/openfaas-incubator/powershell-template",
-        "official": "true"
-    },
-    {
-        "template": "crystal",
-        "platform": "x86_64",
-        "language": "Crystal",
-        "source": "tpei",
-        "description": "Crystal template",
-        "repo": "https://github.com/tpei/crystal_openfaas",
-        "official": "false"
-    },
-    {
-        "template": "csharp-httprequest",
-        "platform": "x86_64",
-        "language": "C#",
-        "source": "distantcam",
-        "description": "C# HTTP template",
-        "repo": "https://github.com/distantcam/csharp-httprequest-template",
-        "official": "false"
-    },
-    {
-        "template": "csharp",
-        "platform": "x86_64",
-        "language": "C#",
-        "source": "openfaas",
-        "description": "Classic C# template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "csharp-kestrel",
-        "platform": "x86_64",
-        "language": "C#",
-        "source": "burtonr",
-        "description": "C# Kestrel HTTP template",
-        "repo": "https://github.com/burtonr/csharp-kestrel-template",
-        "official": "false"
-    },
-    {
-        "template": "vertx-native",
-        "platform": "x86_64",
-        "language": "Java",
-        "source": "pmlopes",
-        "description": "Eclipse Vert.x native image template",
-        "repo": "https://github.com/pmlopes/openfaas-vertx-native-template",
-        "official": "false"
-    },
-    {
-        "template": "swift",
-        "platform": "x86_64",
-        "language": "Swift",
-        "source": "affix",
-        "description": "Swift 4.2 Template",
-        "repo": "https://github.com/affix/openfaas-templates-affix/",
-        "official": "false"
-    },
-    {
-        "template": "lua53",
-        "platform": "x86_64",
-        "language": "Lua",
-        "source": "affix",
-        "description": "Lua 5.3 Template",
-        "repo": "https://github.com/affix/openfaas-templates-affix/",
-        "official": "false"
-    },
-    {
-        "template": "vala",
-        "platform": "x86_64",
-        "language": "Vala",
-        "source": "affix",
-        "description": "Vala Template",
-        "repo": "https://github.com/affix/openfaas-templates-affix/",
-        "official": "false"
-    },
-    {
-        "template": "vala-http",
-        "platform": "x86_64",
-        "language": "Vala",
-        "source": "affix",
-        "description": "Non-Forking Vala Template",
-        "repo": "https://github.com/affix/openfaas-templates-affix/",
         "official": "false"
     },
     {
@@ -385,15 +260,6 @@
         "source": "tmiklas",
         "description": "Perl language template based on Alpine image",
         "repo": "https://github.com/tmiklas/openfaas-perl-templates",
-        "official": "false"
-    },
-    {
-        "template": "crystal-http",
-        "platform": "x86_64",
-        "language": "Crystal",
-        "source": "koffeinfrei",
-        "description": "Crystal HTTP template",
-        "repo": "https://github.com/koffeinfrei/crystal-http-template",
         "official": "false"
     },
     {
