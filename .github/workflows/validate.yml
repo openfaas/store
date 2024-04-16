@@ -21,4 +21,4 @@ jobs:
           jq empty templates.json
       - name: Validate functions in store
         run: |
-          ./ci/validate-functions.sh
+          ./ci/check_store_functions.sh
