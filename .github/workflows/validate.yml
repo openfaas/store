@@ -12,9 +12,9 @@ jobs:
       - name: Initial Setup
         run: |
           sudo apt-get -qy install jq
-    - uses: alexellis/arkade-get@master
-      with:
-        crane: latest
+      - uses: alexellis/arkade-get@master
+        with:
+          crane: latest
       - name: Validate Images
         run: |
           jq empty functions.json
