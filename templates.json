@@ -78,15 +78,6 @@
         "recommended": true
     },
     {
-        "template": "python",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "openfaas",
-        "description": "Classic Python 2.7 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
         "template": "python3",
         "platform": "x86_64",
         "language": "Python",
