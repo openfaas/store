@@ -4,18 +4,14 @@ on: [push, pull_request]
 
 jobs:
   build:
-    strategy:
-      matrix:
-        go-version: [1.13.x]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
         with:
           fetch-depth: 1
       - name: Initial Setup
         run: |
-          sudo apt-get install jq
+          sudo apt-get -qy install jq
       - name: Validate Images
         run: |
           jq empty functions.json
