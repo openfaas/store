@@ -39,6 +39,16 @@
         "recommended": true
     },
     {
+        "template": "node20",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 20 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true",
+        "recommended": true
+    },
+    {
         "template": "node18",
         "platform": "x86_64",
         "language": "NodeJS",
@@ -46,7 +56,7 @@
         "description": "HTTP-based Node 18 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
-        "recommended": true
+        "recommended": false
     },
     {
         "template": "bun-express",
