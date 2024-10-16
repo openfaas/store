@@ -115,6 +115,19 @@
         "repo_url": "https://github.com/openfaas/store-functions"
     },
     {
+        "title": "markdown",
+        "name": "markdown",
+        "author":"openfaas",
+        "description": "Convert markdown to HTML",
+        "images": {
+            "x86_64": "ghcr.io/openfaas/markdown-fn:latest",
+            "arm64": "ghcr.io/openfaas/markdown-fn:latest",
+            "armhf": "ghcr.io/openfaas/markdown-fn:latest"
+        },
+        "readOnlyRootFilesystem": true,
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "youtube-dl",
         "name": "youtube-dl",
         "author":"openfaas",
