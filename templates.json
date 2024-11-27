@@ -186,7 +186,7 @@
         "platform": "x86_64",
         "language": "Ruby",
         "source": "openfaas",
-        "description": "Classic Ruby 2.5 template",
+        "description": "Classic Ruby 3.3.6 template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true"
     },
@@ -195,7 +195,7 @@
         "platform": "x86_64",
         "language": "Ruby",
         "source": "openfaas",
-        "description": "Ruby 2.4 HTTP template",
+        "description": "Ruby 3.3.6 HTTP template",
         "repo": "https://github.com/openfaas/ruby-http",
         "official": "true",
         "recommended": true
