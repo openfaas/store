@@ -154,6 +154,15 @@
         "official": "true"
     },
     {
+        "template": "java17",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "openfaas",
+        "description": "Java 17 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true"
+    },
+    {
         "template": "java11-vert-x",
         "platform": "x86_64",
         "language": "Java",
