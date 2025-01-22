@@ -238,6 +238,18 @@
         }
     },
     {
+        "title": "nvidia-smi",
+        "name": "nvidia-smi",
+        "description": "Print output from nvidia-smi, requires a custom Profile with a request for an Nvidia GPU",
+        "author":"openfaas",
+        "images": {
+            "arm64": "ghcr.io/openfaas/nvidia-smi:latest",
+            "x86_64": "ghcr.io/openfaas/nvidia-smi:latest"
+        },
+        "fprocess": "nvidia-smi",
+        "repo_url": "https://github.com/openfaas/store-functions"
+    },
+    {
         "title": "alpine",
         "name": "alpine",
         "author":"openfaas",
