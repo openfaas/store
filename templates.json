@@ -88,15 +88,6 @@
         "recommended": true
     },
     {
-        "template": "python3",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "openfaas",
-        "description": "Classic Python 3 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
         "template": "python3-flask",
         "platform": "x86_64",
         "language": "Python",
@@ -171,33 +162,6 @@
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
         "recommended": true
-    },
-    {
-        "template": "python3-debian",
-        "platform": "x86_64",
-        "language": "Python",
-        "source": "openfaas",
-        "description": "Python 3 Debian template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "go",
-        "platform": "x86_64",
-        "language": "Go",
-        "source": "openfaas",
-        "description": "Legacy Golang template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
-    },
-    {
-        "template": "ruby",
-        "platform": "x86_64",
-        "language": "Ruby",
-        "source": "openfaas",
-        "description": "Classic Ruby 3.3.6 template",
-        "repo": "https://github.com/openfaas/templates",
-        "official": "true"
     },
     {
         "template": "ruby-http",
