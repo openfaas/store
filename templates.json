@@ -244,5 +244,32 @@
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
         "official": "false"
+    },
+    {
+        "template": "aspnet",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "goncalo-oliveira",
+        "description": "ASPNET Functions C# template",
+        "repo": "https://github.com/goncalo-oliveira/faas-aspnet-template",
+        "official": "false"
+    },
+    {
+        "template": "aspnet-fsharp",
+        "platform": "x86_64",
+        "language": "F#",
+        "source": "goncalo-oliveira",
+        "description": "ASPNET Functions F# template",
+        "repo": "https://github.com/goncalo-oliveira/faas-aspnet-template",
+        "official": "false"
+    },
+    {
+        "template": "aspnet-controller",
+        "platform": "x86_64",
+        "language": "C#",
+        "source": "goncalo-oliveira",
+        "description": "ASPNET Functions C# controller template",
+        "repo": "https://github.com/goncalo-oliveira/faas-aspnet-template",
+        "official": "false"
     }
 ]
