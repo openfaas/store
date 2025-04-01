@@ -244,5 +244,14 @@
         "description": "COBOL Template",
         "repo": "https://github.com/devries/openfaas-cobol-template",
         "official": "false"
+    },
+    {
+        "template": "perl-mojo",
+        "platform": "x86_64",
+        "language": "Perl",
+        "source": "tschaefer",
+        "description": "Perl Mojolicious template",
+        "repo": "https://github.com/tschaefer/openfaas-perl-mojo-template",
+        "official": "false"
     }
 ]
