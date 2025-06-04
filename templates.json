@@ -29,6 +29,15 @@
         "official": "true"
     },
     {
+        "template": "golang-otel",
+        "platform": "x86_64",
+        "language": "Go",
+        "source": "openfaas",
+        "description": "HTTP middleware interface in Go with OpenTelemetry support",
+        "repo": "https://github.com/openfaas/golang-http-template",
+        "official": "true"
+    },
+    {
         "template": "dotnet8-csharp",
         "platform": "x86_64",
         "language": "C#",
