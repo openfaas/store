@@ -49,14 +49,23 @@
         "recommended": true
     },
     {
+        "template": "node26",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "openfaas",
+        "description": "HTTP-based Node 26 template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true",
+        "recommended": true
+    },
+    {
         "template": "node25",
         "platform": "x86_64",
         "language": "NodeJS",
         "source": "openfaas",
         "description": "HTTP-based Node 25 template",
         "repo": "https://github.com/openfaas/templates",
-        "official": "true",
-        "recommended": true
+        "official": "true"
     },
     {
         "template": "node24",
