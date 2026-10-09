@@ -191,6 +191,16 @@
         "description": "Java 11 Vert.x template",
         "repo": "https://github.com/openfaas/templates",
         "official": "true",
+        "recommended": false
+    },
+    {
+        "template": "java21-vertx",
+        "platform": "x86_64",
+        "language": "Java",
+        "source": "openfaas",
+        "description": "Java 21 Vert.x template",
+        "repo": "https://github.com/openfaas/templates",
+        "official": "true",
         "recommended": true
     },
     {
